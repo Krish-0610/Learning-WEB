@@ -1,40 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Website</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <nav>
+    <!--Navigation starts-->
+    <section id="navigation">
+        <div class="logo"><img src="download.png" width="40" height="40" alt="logo"></div>
+        <nav class="nav-links left">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#"><span id="menu">Home</i></span> </a></li>
+                <li><a href="#" class="nav tutorials">About </i></a></li>
+                <li><a href="#" class="nav references">Contact </i></a></li>
+                <li><a href="#" class="nav exercises">Services </i></a></li>
+                <li><a href="#" class="nav pro">Pro</a></li>
             </ul>
         </nav>
-        <nav>
-            <ul>
-                <li><a href="html.html">HTML</a></li>
-                <li><a href="css.html">CSS</a></li>
-                <li><a href="js.html">JS</a></li>
-                <li><a href="react.html">React JS</a></li>
-                <li><a href="node.html">Node JS</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Welcome!</h2>
-            <p>You can learn code here!</p>
-            <input type="search" placeholder="Search">
-        </section>
-    </main>
+
+    </section>
+    <!-- Navigation ends -->
+    <!--Top Body starts-->
+    <section id="body-content">
+        <div class="main-head">
+            <h1>Learn to Code</h1>
+            <h3>With the world's largest web developer site.</h3>
+            <div class="search-container">
+                <input type="text" placeholder="Search our tutorials, e.g.HTML" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <h4>Not Sure Where To Begin?</h4>
+        </div>
+    </section>
+    <div class="svg">
+        <svg style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+        </svg>
+    </div>
+    <!--Top Body ends-->
+    <!--Section html starts-->
+    <section id="html">
+        <div class="left-content">
+            <h1>HTML</h1>
+            <p>The language for building web pages</p>
+            <a href="#" style="text-decoration: none;"><button id="btn-A">Learn HTML</button></a>
+            <a href="#" style="text-decoration: none;"><button id="btn-C">HTML Reference</button></a>
+        </div>
+        </div>
+    </section>
+    <!--Section Html ends-->
+    <!--Section Css starts-->
+    <section id="css" style="background-color: #FFF4A3;">
+        <div class="left-content">
+            <h1>CSS</h1>
+            <p>The language for styling web pages</p>
+            <a href="#" style="text-decoration: none;"><button id="btn-A">Learn CSS</button></a>
+            <a href="#" style="text-decoration: none;"><button id="btn-C">CSS Reference</button></a>
+        </div>
+        </div>
+    </section>
+    <!--Section Css ends-->
+    <!--Section Javascript starts-->
+    <section id="javascript" style="background-color:#74b7be;">
+        <div class="left-content black">
+            <h1>JavaScript</h1>
+            <p>The language for programming web pages</p>
+            <a href="#" style="text-decoration: none;"><button id="btn-A">Learn JavaScript</button></a>
+            <a href="#" style="text-decoration: none;"><button id="btn-B">JavaScript Reference</button></a>
+        </div>
+        </div>
+    </section>
+    <!--Section Javascript ends-->
+    <!--Section Python starts-->
+    <section id="python" style="background-color:#9f585e;">
+        <div class="left-content grey">
+            <h1>Python</h1>
+            <p>A popular programming language</p>
+            <a href="#" style="text-decoration: none;"><button id="btn-A">Learn Python</button></a>
+            <a href="#" style="text-decoration: none;"><button id="btn-C">Pyhton Reference</button></a>
+        </div>
+        </div>
+    </section>
+    <!--Section Python ends-->
+    <!--Section Sql starts-->
+    <section id="sql" style="background-color:#41956d">
+        <div class="left-content grey">
+            <h1>NODE</h1>
+            <p>A language for accessing databases</p>
+            <a href="#" style="text-decoration: none;"><button id="btn-A">Learn NODE</button></a>
+            <a href="#" style="text-decoration: none;"><button id="btn-C">NODE Reference</button></a>
+        </div>
+        </div>
+    </section>
+    <!--Section Sql ends-->
+
+
+    <!--Section footer starts-->
     <footer>
-        <p>&copy; 2024 My Website</p>
+        <div class="footer">
+            <div class="main-footer">
+                <div class="footer-right">
+                </div>
+            </div>
+
+            <div class="content">
+                <p class="footer-paragraph">W3Schools is optimized for learning, testing, and training. Examples might
+                    be
+                    simplified to improve reading
+                    and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid
+                    errors,but we
+                    cannot warrant full
+                </p>
+                <p class="footer-paragraph"> correctness of all content. While using this site,
+                    you agree to have read and accepted our <a href="#">terms of use,cookie and privacy policy.</a>
+                </p>
+                <p class="footer-paragraph"><a href="#">Copyright 1999-2022</a> by Refsnes Data. All Rights Reserved.
+                </p>
+                </p>
+            </div>
+
+            <br><br><br>
+        </div>
     </footer>
-    <script src="scripts.js"></script>
+    <!--Section footer ends-->
 </body>
+
 </html>
