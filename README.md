@@ -1,5 +1,3 @@
 # About
 
-This is a clone website like Geeks for Geeks OR W3 School
-
-This is shrey who are you ?
+Look at the Html and Css code i updated the code and look if it is working or not !!!!!! inform me if any error ocure !!! / call for better explanation
