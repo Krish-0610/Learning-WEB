@@ -1,0 +1,114 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1em 0;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .top-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .top-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .top-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header .top-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .top-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Side navbar styles */
+.side-navbar {
+    width: 200px;
+    background-color: #333;
+    position: fixed;
+    top: 60px; /* Adjust to the height of your header */
+    height: calc(100% - 60px); /* Adjust to the height of your header */
+    overflow: auto;
+    padding-top: 20px;
+}
+
+.side-navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-navbar ul li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.side-navbar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Main content styles */
+main {
+    margin-left: 220px; /* Same as the width of the sidenav */
+    padding: 20px;
+    margin-top: 80px; /* Add margin-top to avoid content hiding under the header */
+}
+
+main .main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+main .main h2 {
+    color: #4CAF50;
+}
+
+.intro {
+    background-color: #e7f3e7;
+    padding: 10px;
+    border-left: 5px solid #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Section styles */
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-top: 10px;
+}
