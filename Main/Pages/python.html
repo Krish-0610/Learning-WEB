@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python Tutorial</title>
+    <title>JavaScript Tutorial</title>
     <link rel="stylesheet" href="page.css">
 </head>
 
@@ -29,55 +29,623 @@
     </header>
     <div class="side-navbar">
         <ul>
-            <li><a href="#topic1">Python Home</a></li>
-            <li><a href="#topic2">Python Introduction</a></li>
-            <li><a href="#topic3">Python Syntax</a></li>
-            <li><a href="#topic4">Python Variables</a></li>
-            <li><a href="#topic5">Python Data Types</a></li>
-            <li><a href="#topic6">Python Operators</a></li>
-            <li><a href="#topic7">Python Functions</a></li>
-            <li><a href="#topic8">Python Modules</a></li>
+            <li><a href="#topic1">JS Home</a></li>
+            <li><a href="#topic2">JS Introduction</a></li>
+            <li><a href="#topic3">JS Syntax</a></li>
+            <li><a href="#topic4">JS Variables</a></li>
+            <li><a href="#topic5">JS Operators</a></li>
+            <li><a href="#topic6">JS Functions</a></li>
+            <li><a href="#topic7">JS Events</a></li>
+            <li><a href="#topic8">JS Objects</a></li>
         </ul>
     </div>
     <main>
-        <h2 class="main">Python Tutorial</h2>
-        <p class="intro">Python is a popular programming language. It was created by Guido van Rossum, and released in
-            1991.</p>
-        <p class="intro">It is used for web development (server-side), software development, mathematics, and system
-            scripting.</p>
-        <p class="intro">Python is easy to learn - You will enjoy it!</p>
-        <section id="topic1">
-            <h2>Python Home</h2>
-            <p>Details about Python Home...</p>
-        </section>
-        <section id="topic2">
-            <h2>Python Introduction</h2>
-            <p>Details about Python Introduction...</p>
-        </section>
-        <section id="topic3">
-            <h2>Python Syntax</h2>
-            <p>Details about Python Syntax...</p>
-        </section>
-        <section id="topic4">
-            <h2>Python Variables</h2>
-            <p>Details about Python Variables...</p>
-        </section>
-        <section id="topic5">
-            <h2>Python Data Types</h2>
-            <p>Details about Python Data Types...</p>
-        </section>
-        <section id="topic6">
-            <h2>Python Operators</h2>
-            <p>Details about Python Operators...</p>
-        </section>
-        <section id="topic7">
-            <h2>Python Functions</h2>
-            <p>Details about Python Functions...</p>
-        </section>
+        <h2 class="main">JavaScript Tutorial</h2>
+        <p class="intro">JavaScript is the programming language of the Web.</p>
+        <p class="intro">With JavaScript, you can create dynamic and interactive web content.</p>
+        <p class="intro">JavaScript is easy to learn - You will enjoy it!</p>
+
         <section id="topic8">
-            <h2>Python Modules</h2>
-            <p>Details about Python Modules...</p>
+            <h2>JavaScript Overview</h2>
+            <p>JavaScript is a versatile programming language primarily used for creating interactive and dynamic content on the web. It is an essential part of web development, enabling developers to create complex features like animations, form validations, and interactive maps.</p>
+        
+            <h3>Basics of JavaScript</h3>
+            <p>JavaScript operates within the web browser and interacts with HTML and CSS to modify the document's structure and style dynamically. Here are the key concepts:</p>
+            <ul>
+                <li><strong>Variables:</strong> Used to store data values that can be referenced and manipulated throughout the code.</li>
+                <li><strong>Functions:</strong> Blocks of code designed to perform a particular task. They can be invoked or called when needed.</li>
+                <li><strong>Events:</strong> Actions or occurrences that happen in the browser, such as clicks or keypresses, which JavaScript can respond to.</li>
+            </ul>
+        
+            <h4>Declaring Variables</h4>
+            <p>Variables in JavaScript are declared using the <code>var</code>, <code>let</code>, or <code>const</code> keywords. The choice of keyword depends on the scope and immutability of the variable.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Declaring variables */
+        var name = "John"; // 'var' is function-scoped
+        let age = 25; // 'let' is block-scoped
+        const city = "New York"; // 'const' is block-scoped and immutable
+        </code>
+            </pre>
+        
+            <h4>Creating Functions</h4>
+            <p>Functions are created using the <code>function</code> keyword. You can define reusable blocks of code that perform specific tasks.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Basic function definition */
+        function greet() {
+            alert("Hello, World!"); // Displays an alert with the message
+        }
+        
+        /* Function with parameters */
+        function add(a, b) {
+            return a + b; // Returns the sum of two numbers
+        }
+        </code>
+            </pre>
+        
+            <h4>Handling Events</h4>
+            <p>JavaScript can listen for events such as clicks, mouse movements, or key presses, and respond accordingly. This allows for interactive web pages.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Event handling */
+        document.getElementById("myButton").addEventListener("click", function() {
+            alert("Button clicked!"); // Alert when the button is clicked
+        });
+        </code>
+            </pre>
+        
+            <h4>JavaScript in HTML</h4>
+            <p>JavaScript can be included directly within HTML using the <code>&lt;script&gt;</code> tag. It can be placed in the <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> of the document, or it can be linked as an external file.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        <!-- Inline JavaScript -->
+        <script>
+            document.write("This is written using JavaScript!");
+        </script>
+        
+        <!-- External JavaScript -->
+        <script src="script.js"></script>
+        </code>
+            </pre>
+        
+            <h4>JavaScript and the DOM</h4>
+            <p>The Document Object Model (DOM) represents the structure of a web page. JavaScript can manipulate the DOM to change content, styles, and structure dynamically.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Accessing and modifying the DOM */
+        document.getElementById("header").innerHTML = "New Header Text"; // Changes the text of the element with id 'header'
+        document.getElementById("header").style.color = "blue"; // Changes the text color to blue
+        </code>
+            </pre>
+        
+            <h4>Responsive Design with JavaScript</h4>
+            <p>JavaScript can be used to create responsive web designs by detecting the screen size and adjusting the content dynamically. This is often combined with CSS media queries for a more robust solution.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Responsive design with JavaScript */
+        if (window.innerWidth < 600) {
+            document.getElementById("container").style.flexDirection = "column"; // Adjusts layout for small screens
+        }
+        </code>
+            </pre>
+        
+            <h4>Additional Resources</h4>
+            <p>For more information on JavaScript, you can visit the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs on JavaScript</a> or explore tutorials on <a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript Tutorial</a> and <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Codecademy JavaScript Course</a>.</p>
         </section>
+        
+
+
+        <section id="topic2">
+            <h2>JavaScript Introduction</h2>
+            <p>JavaScript is a high-level, interpreted programming language that is widely used in web development. It allows developers to create dynamic and interactive content, making websites more engaging and functional.</p>
+        
+            <h3>What is JavaScript?</h3>
+            <p>JavaScript is a versatile language that can be used on both the client-side and server-side of web development. It is one of the core technologies of the World Wide Web, alongside HTML and CSS.</p>
+            <ul>
+                <li><strong>Client-Side JavaScript:</strong> Runs in the browser and is primarily used for enhancing user interfaces, validating form inputs, creating animations, and responding to user interactions.</li>
+                <li><strong>Server-Side JavaScript:</strong> Runs on a server and is used to create dynamic web pages, manage databases, and handle HTTP requests and responses. Node.js is a popular runtime for server-side JavaScript.</li>
+            </ul>
+        
+            <h4>History of JavaScript</h4>
+            <p>JavaScript was created by Brendan Eich in 1995 while he was working at Netscape Communications Corporation. It was initially developed as a way to add interactivity to web pages. Over the years, JavaScript has evolved significantly and has become a full-fledged programming language used in a variety of applications.</p>
+        
+            <h4>Why Learn JavaScript?</h4>
+            <p>JavaScript is an essential skill for web developers. It is supported by all modern browsers and has a vast ecosystem of libraries and frameworks. Learning JavaScript opens up many opportunities in web development, including front-end, back-end, and full-stack development.</p>
+            <ul>
+                <li><strong>Versatility:</strong> JavaScript can be used for both client-side and server-side development.</li>
+                <li><strong>Interactivity:</strong> JavaScript enables the creation of interactive elements, enhancing user experience.</li>
+                <li><strong>Community Support:</strong> A large and active community provides a wealth of resources, tutorials, and tools for learning and development.</li>
+            </ul>
+        
+            <h4>Basic Syntax</h4>
+            <p>JavaScript syntax is the set of rules that define how a JavaScript program is constructed. Understanding the basic syntax is crucial for writing functional code.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Basic JavaScript Syntax Example */
+        let greeting = "Hello, World!"; // Variable declaration
+        console.log(greeting); // Outputs 'Hello, World!' to the console
+        </code>
+            </pre>
+        
+            <h4>Where to Use JavaScript</h4>
+            <p>JavaScript can be used in various scenarios, from simple webpage enhancements to complex web applications. Some common uses include:</p>
+            <ul>
+                <li><strong>Form Validation:</strong> Ensuring that user inputs meet specified criteria before submitting a form.</li>
+                <li><strong>Dynamic Content:</strong> Changing the content of a webpage without reloading it.</li>
+                <li><strong>Animations:</strong> Creating visual effects such as fades, slides, and other transitions.</li>
+            </ul>
+        
+            <h4>Conclusion</h4>
+            <p>JavaScript is a powerful and essential tool for web developers. Whether you're building a simple webpage or a complex web application, JavaScript provides the functionality and interactivity that modern web users expect.</p>
+        </section>
+        
+
+
+        <section id="topic3">
+            <h2>JavaScript Syntax</h2>
+            <p>JavaScript syntax is the set of rules and guidelines that define how JavaScript code is written and interpreted by the browser. Understanding the syntax is crucial for writing effective and error-free code.</p>
+        
+            <h3>Basic Elements of JavaScript Syntax</h3>
+            <p>JavaScript syntax consists of various elements that come together to form a program. These include variables, data types, operators, expressions, and more.</p>
+        
+            <h4>Variables</h4>
+            <p>Variables are used to store data values that can be referenced and manipulated throughout the code. In JavaScript, variables are declared using the <code>var</code>, <code>let</code>, or <code>const</code> keywords.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Variable declarations */
+        var x = 10;      // 'var' is function-scoped
+        let y = 20;      // 'let' is block-scoped
+        const z = 30;    // 'const' is block-scoped and cannot be reassigned
+        </code>
+            </pre>
+        
+            <h4>Data Types</h4>
+            <p>JavaScript supports several data types, including:</p>
+            <ul>
+                <li><strong>String:</strong> Represents text enclosed in single or double quotes, e.g., <code>"Hello"</code>.</li>
+                <li><strong>Number:</strong> Represents both integers and floating-point numbers, e.g., <code>42</code> or <code>3.14</code>.</li>
+                <li><strong>Boolean:</strong> Represents logical values, either <code>true</code> or <code>false</code>.</li>
+                <li><strong>Array:</strong> Represents a list of values, e.g., <code>[1, 2, 3]</code>.</li>
+                <li><strong>Object:</strong> Represents a collection of key-value pairs, e.g., <code>{ name: "John", age: 30 }</code>.</li>
+            </ul>
+        
+            <h4>Operators</h4>
+            <p>Operators are used to perform operations on variables and values. JavaScript supports various types of operators:</p>
+            <ul>
+                <li><strong>Arithmetic Operators:</strong> Used to perform mathematical calculations, e.g., <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>.</li>
+                <li><strong>Assignment Operators:</strong> Used to assign values to variables, e.g., <code>=</code>, <code>+=</code>, <code>*=</code>.</li>
+                <li><strong>Comparison Operators:</strong> Used to compare two values, e.g., <code>==</code>, <code>===</code>, <code>!=</code>, <code>&gt;</code>.</li>
+                <li><strong>Logical Operators:</strong> Used to perform logical operations, e.g., <code>&&</code>, <code>||</code>, <code>!</code>.</li>
+            </ul>
+        
+            <h4>Expressions and Statements</h4>
+            <p>In JavaScript, an expression is a piece of code that produces a value, while a statement is an instruction that performs an action. For example:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Expression */
+        let sum = 10 + 20;  // The expression '10 + 20' produces the value 30
+        
+        /* Statement */
+        if (sum > 20) {
+            console.log("Sum is greater than 20"); // This statement performs an action
+        }
+        </code>
+            </pre>
+        
+            <h4>Comments</h4>
+            <p>Comments are used to add notes or explanations within the code. They are ignored by the browser and do not affect the execution of the script.</p>
+            <ul>
+                <li><strong>Single-Line Comment:</strong> Begins with <code>//</code>, e.g., <code>// This is a comment</code>.</li>
+                <li><strong>Multi-Line Comment:</strong> Enclosed in <code>/* ... */</code>, e.g., <code>/* This is a multi-line comment */</code>.</li>
+            </ul>
+        
+            <h4>Code Blocks and Indentation</h4>
+            <p>Code blocks are sections of code enclosed in curly braces <code>{}</code>. Proper indentation is crucial for readability, although it is not enforced by JavaScript itself.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Code block with proper indentation */
+        function greet(name) {
+            if (name) {
+                console.log("Hello, " + name);
+            } else {
+                console.log("Hello, World!");
+            }
+        }
+        </code>
+            </pre>
+        
+            <h4>Conclusion</h4>
+            <p>Understanding JavaScript syntax is the first step in mastering the language. By learning the basic building blocks, you can start creating dynamic and interactive web applications.</p>
+        </section>
+        
+
+
+        <section id="topic4">
+            <h2>JavaScript Variables</h2>
+            <p>Variables are fundamental building blocks in JavaScript, allowing developers to store, update, and manipulate data throughout their code. Understanding how to use variables effectively is key to writing efficient and readable programs.</p>
+        
+            <h3>Declaring Variables</h3>
+            <p>In JavaScript, variables can be declared using three keywords: <code>var</code>, <code>let</code>, and <code>const</code>. Each has its own scope and use case:</p>
+            <ul>
+                <li><strong>var:</strong> The traditional way to declare a variable. It is function-scoped and can be re-assigned.</li>
+                <li><strong>let:</strong> Introduced in ES6 (ECMAScript 2015), <code>let</code> is block-scoped and allows re-assignment.</li>
+                <li><strong>const:</strong> Also introduced in ES6, <code>const</code> is block-scoped but cannot be re-assigned once a value is set.</li>
+            </ul>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Variable declarations */
+        var x = 5;        // Function-scoped variable
+        let y = 10;       // Block-scoped variable
+        const z = 15;     // Block-scoped constant, cannot be re-assigned
+        </code>
+            </pre>
+        
+            <h4>Variable Scope</h4>
+            <p>The scope of a variable determines where it can be accessed in the code. JavaScript has three types of scopes:</p>
+            <ul>
+                <li><strong>Global Scope:</strong> Variables declared outside any function or block are globally scoped and can be accessed anywhere in the code.</li>
+                <li><strong>Function Scope:</strong> Variables declared with <code>var</code> inside a function are scoped to that function and cannot be accessed outside of it.</li>
+                <li><strong>Block Scope:</strong> Variables declared with <code>let</code> or <code>const</code> inside a block (e.g., within <code>{}</code>) are limited to that block.</li>
+            </ul>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Scope examples */
+        var globalVar = "I am global"; // Global scope
+        
+        function myFunction() {
+            var functionVar = "I am in a function"; // Function scope
+            console.log(functionVar); // Accessible within the function
+        }
+        
+        if (true) {
+            let blockVar = "I am in a block"; // Block scope
+            console.log(blockVar); // Accessible within the block
+        }
+        </code>
+            </pre>
+        
+            <h4>Variable Hoisting</h4>
+            <p>JavaScript has a behavior called "hoisting," where variable declarations are moved to the top of their scope before code execution. This applies to both <code>var</code> and function declarations but not to <code>let</code> or <code>const</code>.</p>
+            <p>However, the values are not hoisted, which can lead to unexpected results:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        console.log(hoistedVar); // Undefined, because only the declaration is hoisted
+        var hoistedVar = "I am hoisted";
+        
+        console.log(notHoistedVar); // ReferenceError: Cannot access 'notHoistedVar' before initialization
+        let notHoistedVar = "I am not hoisted";
+        </code>
+            </pre>
+        
+            <h4>Best Practices</h4>
+            <p>When working with variables in JavaScript, it's important to follow best practices to avoid common pitfalls:</p>
+            <ul>
+                <li>Use <code>let</code> and <code>const</code> instead of <code>var</code> to prevent issues related to function scope and hoisting.</li>
+                <li>Always declare variables at the beginning of their scope to enhance code readability and maintainability.</li>
+                <li>Use <code>const</code> for variables that should not be re-assigned to prevent accidental changes.</li>
+                <li>Choose meaningful and descriptive names for variables to make your code more understandable.</li>
+            </ul>
+        
+            <h4>Conclusion</h4>
+            <p>Understanding how to declare and use variables in JavaScript is essential for any developer. By following best practices and being aware of JavaScript's unique behaviors like hoisting, you can write cleaner, more reliable code.</p>
+        </section>
+        
+
+
+        <section id="topic4">
+            <h2>JavaScript Variables</h2>
+            <p>Variables are containers for storing data values. In JavaScript, variables are used to store data that can be used and manipulated throughout your program.</p>
+        
+            <h3>Declaring Variables</h3>
+            <p>JavaScript variables can be declared in four ways:</p>
+            <ul>
+                <li><strong>Automatically:</strong> A variable can be declared automatically the first time it is assigned a value without using any keyword. However, this is not recommended as it can lead to unexpected behavior.</li>
+                <li><strong>Using <code>var</code>:</strong> This is the old way of declaring variables. Variables declared with <code>var</code> have function scope or global scope.</li>
+                <li><strong>Using <code>let</code>:</strong> This is the modern way of declaring variables. Variables declared with <code>let</code> have block scope and cannot be redeclared within the same scope.</li>
+                <li><strong>Using <code>const</code>:</strong> Variables declared with <code>const</code> are also block-scoped but are read-only. Once a <code>const</code> variable is assigned a value, it cannot be reassigned.</li>
+            </ul>
+        
+            <h4>Example: Variable Declaration</h4>
+            <p>Here's an example of declaring variables in different ways:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Automatically declared variable (not recommended)
+        myVar = "Hello";
+        
+        // Declaring a variable with var
+        var name = "John";
+        
+        // Declaring a variable with let
+        let age = 30;
+        
+        // Declaring a constant variable with const
+        const birthYear = 1990;
+        </code>
+            </pre>
+        </section>
+
+        
+        <section id="topic5">
+            <h2>JavaScript Operators</h2>
+            <p>Operators are used to perform operations on variables and values. JavaScript includes several types of operators that allow you to manipulate data in various ways.</p>
+        
+            <h3>Arithmetic Operators</h3>
+            <p>Arithmetic operators are used to perform basic mathematical operations, such as addition, subtraction, multiplication, and division:</p>
+            <ul>
+                <li><strong>Addition (+):</strong> Adds two numbers together, e.g., <code>5 + 2</code> results in <code>7</code>.</li>
+                <li><strong>Subtraction (-):</strong> Subtracts one number from another, e.g., <code>5 - 2</code> results in <code>3</code>.</li>
+                <li><strong>Multiplication (*):</strong> Multiplies two numbers, e.g., <code>5 * 2</code> results in <code>10</code>.</li>
+                <li><strong>Division (/):</strong> Divides one number by another, e.g., <code>5 / 2</code> results in <code>2.5</code>.</li>
+                <li><strong>Modulus (%):</strong> Returns the remainder of a division, e.g., <code>5 % 2</code> results in <code>1</code>.</li>
+                <li><strong>Increment (++):</strong> Increases a number by 1, e.g., <code>let x = 5; x++;</code> results in <code>6</code>.</li>
+                <li><strong>Decrement (--):</strong> Decreases a number by 1, e.g., <code>let x = 5; x--;</code> results in <code>4</code>.</li>
+            </ul>
+        
+            <h4>Example: Arithmetic Operators</h4>
+            <p>Here are some examples of arithmetic operators in action:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        let a = 10;
+        let b = 3;
+        
+        let sum = a + b;   // 13
+        let difference = a - b;   // 7
+        let product = a * b;   // 30
+        let quotient = a / b;   // 3.33
+        let remainder = a % b;   // 1
+        a++;   // a becomes 11
+        b--;   // b becomes 2
+        </code>
+            </pre>
+        </section>
+        
+
+
+        <section id="topic6">
+            <h2>JavaScript Functions</h2>
+            <p>Functions are one of the fundamental building blocks in JavaScript. A function is a block of code designed to perform a particular task, and it can be reused throughout your program.</p>
+        
+            <h3>Defining a Function</h3>
+            <p>A JavaScript function is defined with the <code>function</code> keyword, followed by a name, followed by parentheses <code>()</code>. A function can be declared as follows:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        function functionName() {
+            // Code to be executed
+        }
+        </code>
+            </pre>
+        
+            <h4>Example: Simple Function</h4>
+            <p>Here’s an example of a simple function that logs a message to the console:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        function greet() {
+            console.log("Hello, World!");
+        }
+        
+        greet(); // Calls the function, output: "Hello, World!"
+        </code>
+            </pre>
+        
+            <h3>Function Parameters</h3>
+            <p>Functions can take input values, called parameters, which allow you to pass data into the function. These parameters are specified inside the parentheses:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        function greetUser(name) {
+            console.log("Hello, " + name + "!");
+        }
+        
+        greetUser("Alice"); // Output: "Hello, Alice!"
+        </code>
+            </pre>
+        
+            <h3>Function Return Value</h3>
+            <p>A JavaScript function can also return a value back to the caller using the <code>return</code> statement:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        function add(a, b) {
+            return a + b;
+        }
+        
+        let sum = add(5, 3); // sum is now 8
+        </code>
+            </pre>
+        
+            <h3>Function Expressions</h3>
+            <p>In JavaScript, functions can also be defined as expressions. A function expression can be stored in a variable:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        let add = function(a, b) {
+            return a + b;
+        };
+        
+        let sum = add(5, 3); // sum is now 8
+        </code>
+            </pre>
+        
+            <h3>Arrow Functions</h3>
+            <p>ES6 introduced arrow functions, a more concise syntax for writing function expressions:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        let add = (a, b) => a + b;
+        
+        let sum = add(5, 3); // sum is now 8
+        </code>
+            </pre>
+        </section>
+        
+
+
+        <section id="topic7">
+            <h2>JavaScript Events</h2>
+            <p>JavaScript events are actions or occurrences that happen in the browser. These events can be triggered by the user or by the browser itself, and JavaScript can be used to respond to these events. Common events include user interactions like clicking a button, hovering over an element, or pressing a key.</p>
+        
+            <h3>Common HTML Events</h3>
+            <p>Here are some common HTML events that are often used in JavaScript:</p>
+            <ul>
+                <li><strong><code>onchange</code>:</strong> Triggered when the value of an element has been changed.</li>
+                <li><strong><code>onclick</code>:</strong> Triggered when the user clicks on an element.</li>
+                <li><strong><code>onmouseover</code>:</strong> Triggered when the user moves the mouse pointer over an element.</li>
+                <li><strong><code>onmouseout</code>:</strong> Triggered when the user moves the mouse pointer away from an element.</li>
+                <li><strong><code>onkeydown</code>:</strong> Triggered when the user presses a keyboard key.</li>
+                <li><strong><code>onload</code>:</strong> Triggered when the browser has finished loading the page.</li>
+            </ul>
+        
+            <h3>Event Handling</h3>
+            <p>To handle events, you can use event listeners or inline event attributes. Here's an example of handling a click event using both methods:</p>
+            
+            <h4>Example: Handling a Click Event</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Event handling using an event listener
+        document.getElementById("myButton").addEventListener("click", function() {
+            alert("Button clicked!");
+        });
+        
+        // Event handling using an inline event attribute
+        // <button onclick="alert('Button clicked!')">Click Me</button>
+        </code>
+            </pre>
+        
+            <h3>Mouse Events</h3>
+            <p>Mouse events are triggered by user interactions with the mouse. Here are some common mouse events:</p>
+            <ul>
+                <li><strong><code>onclick</code>:</strong> Triggered when the user clicks on an element.</li>
+                <li><strong><code>onmouseover</code>:</strong> Triggered when the user moves the mouse pointer over an element.</li>
+                <li><strong><code>onmouseout</code>:</strong> Triggered when the user moves the mouse pointer away from an element.</li>
+            </ul>
+        
+            <h4>Example: Mouseover and Mouseout Events</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        document.getElementById("myDiv").addEventListener("mouseover", function() {
+            this.style.backgroundColor = "yellow";
+        });
+        
+        document.getElementById("myDiv").addEventListener("mouseout", function() {
+            this.style.backgroundColor = "white";
+        });
+        </code>
+            </pre>
+        
+            <h3>Keyboard Events</h3>
+            <p>Keyboard events are triggered when the user presses a key on the keyboard. Common keyboard events include:</p>
+            <ul>
+                <li><strong><code>onkeydown</code>:</strong> Triggered when a key is pressed down.</li>
+                <li><strong><code>onkeyup</code>:</strong> Triggered when a key is released.</li>
+            </ul>
+        
+            <h4>Example: Handling Keydown Event</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        document.addEventListener("keydown", function(event) {
+            alert("Key pressed: " + event.key);
+        });
+        </code>
+            </pre>
+        
+            <h3>Page Load Event</h3>
+            <p>The <code>onload</code> event is triggered when the browser has finished loading the page. This event is often used to execute scripts as soon as the page has loaded:</p>
+            
+            <h4>Example: Page Load Event</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        window.onload = function() {
+            alert("Page has fully loaded.");
+        };
+        </code>
+            </pre>
+        </section>
+        
+
+        
+        <section id="topic8">
+            <h2>JavaScript Objects</h2>
+            <p>In JavaScript, objects are a collection of properties, where each property consists of a key-value pair. Objects are used to store multiple values as a single entity, and they are one of the most important data types in JavaScript.</p>
+        
+            <h3>Creating a JavaScript Object</h3>
+            <p>An object can be created using either the object literal syntax or the <code>new Object()</code> constructor. Here's an example of creating an object using the object literal syntax:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Creating an object using object literal syntax
+        let person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 30,
+            job: "Developer"
+        };
+        </code>
+            </pre>
+        
+            <h3>Accessing Object Properties</h3>
+            <p>You can access the properties of an object using dot notation or bracket notation:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Accessing object properties using dot notation
+        let name = person.firstName; // "John"
+        
+        // Accessing object properties using bracket notation
+        let age = person["age"]; // 30
+        </code>
+            </pre>
+        
+            <h3>Adding and Modifying Properties</h3>
+            <p>Properties can be added or modified by simply assigning a value to the property using dot or bracket notation:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Adding a new property
+        person.email = "john.doe@example.com";
+        
+        // Modifying an existing property
+        person.age = 31;
+        </code>
+            </pre>
+        
+            <h3>Deleting Properties</h3>
+            <p>Properties can be removed from an object using the <code>delete</code> operator:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Deleting a property
+        delete person.job;
+        </code>
+            </pre>
+        
+            <h3>Object Methods</h3>
+            <p>In JavaScript, methods are functions that are stored as object properties. Here's how you can add a method to an object:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Adding a method to an object
+        person.fullName = function() {
+            return this.firstName + " " + this.lastName;
+        };
+        
+        // Calling the method
+        let fullName = person.fullName(); // "John Doe"
+        </code>
+            </pre>
+        
+            <h3>Object Constructors</h3>
+            <p>You can create multiple objects with the same properties using a constructor function. A constructor function is a template for creating objects:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Object constructor function
+        function Person(firstName, lastName, age, job) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+            this.job = job;
+        }
+        
+        // Creating objects using the constructor
+        let person1 = new Person("John", "Doe", 30, "Developer");
+        let person2 = new Person("Jane", "Doe", 28, "Designer");
+        </code>
+            </pre>
+        </section>
+        
+
+
     </main>
 </body>
 

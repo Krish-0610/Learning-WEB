@@ -44,38 +44,1039 @@
         <p class="intro">CSS is the language we use to style a Web page.</p>
         <p class="intro">With CSS, you can control the color, font, and layout of your HTML elements.</p>
         <p class="intro">CSS is easy to learn and understand - You will enjoy it!</p>
+
+
         <section id="topic1">
             <h2>CSS Home</h2>
-            <p>Details about CSS Home...</p>
+            <p>Welcome to the CSS Home section. Cascading Style Sheets (CSS) is a stylesheet language used to describe
+                the presentation of a document written in HTML or XML. CSS enables you to control the layout, colors,
+                fonts, and overall design of your web pages, making them more visually appealing and user-friendly.</p>
+
+            <h3>Introduction to CSS</h3>
+            <p>CSS was designed to separate content from design, allowing you to apply styles to web pages without
+                changing the underlying HTML structure. This separation of concerns helps with maintainability and
+                consistency across multiple pages of a website.</p>
+
+            <h3>How CSS Works</h3>
+            <p>CSS works by associating rules with HTML elements. A CSS rule consists of a selector and a declaration
+                block. The selector targets the HTML element(s) to be styled, while the declaration block contains one
+                or more declarations that define the styling properties and their values.</p>
+
+            <h3>CSS Syntax</h3>
+            <p>The basic syntax of a CSS rule is as follows:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        selector {
+            property: value;
+        }
+        </code>
+            </pre>
+
+            <h3>Example: Basic CSS</h3>
+            <p>Here's a simple example demonstrating how to apply CSS styles to HTML elements:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* CSS Stylesheet */
+        
+        /* Styling the body element */
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Styling the h1 element */
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        </code>
+            </pre>
+
+            <h3>CSS Selectors</h3>
+            <p>CSS selectors are patterns used to select the elements you want to style. Some common selectors include:
+            </p>
+            <ul>
+                <li><strong>Element Selector:</strong> Targets HTML elements by their tag name. For example,
+                    <code>p</code> selects all <code>&lt;p&gt;</code> elements.</li>
+                <li><strong>Class Selector:</strong> Targets elements with a specific class attribute. Prefixed with a
+                    dot (<code>.</code>). For example, <code>.my-class</code> selects elements with
+                    <code>class="my-class"</code>.</li>
+                <li><strong>ID Selector:</strong> Targets an element with a specific id attribute. Prefixed with a hash
+                    (<code>#</code>). For example, <code>#my-id</code> selects the element with <code>id="my-id"</code>.
+                </li>
+            </ul>
+
+            <h3>Example: CSS Selectors</h3>
+            <p>Here’s an example of using different CSS selectors:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+        
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+        
+        /* ID Selector */
+        #header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        </code>
+            </pre>
+
+            <h3>CSS Box Model</h3>
+            <p>The CSS box model describes the rectangular boxes generated for elements in the document tree. It
+                consists of the following components:</p>
+            <ul>
+                <li><strong>Content:</strong> The actual content of the box, such as text or images.</li>
+                <li><strong>Padding:</strong> Space between the content and the border. Padding is inside the element.
+                </li>
+                <li><strong>Border:</strong> The border surrounding the padding (if any). The border sits between the
+                    padding and the margin.</li>
+                <li><strong>Margin:</strong> Space outside the border. Margins are used to create space between
+                    elements.</li>
+            </ul>
+
+            <h3>Example: CSS Box Model</h3>
+            <p>This example demonstrates the CSS box model properties:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* CSS Box Model Example */
+        .box {
+            width: 200px;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 10px;
+            background-color: #fff;
+        }
+        </code>
+            </pre>
+
+            <h3>Getting Started with CSS</h3>
+            <p>To start using CSS, you can include styles directly within your HTML file using the
+                <code>&lt;style&gt;</code> tag or link to an external CSS file using the <code>&lt;link&gt;</code> tag
+                in the HTML <code>&lt;head&gt;</code> section. External CSS files are recommended for larger projects to
+                keep HTML and CSS separate and more manageable.</p>
+
+            <h3>Additional Resources</h3>
+            <p>For more detailed tutorials and documentation on CSS, you can visit the official <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs</a> or explore
+                online resources like <a href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS
+                    Tutorial</a> and <a href="https://www.codecademy.com/learn/learn-css" target="_blank">Codecademy CSS
+                    Course</a>.</p>
         </section>
+
+
+
         <section id="topic2">
             <h2>CSS Introduction</h2>
-            <p>Details about CSS Introduction...</p>
+            <p>Cascading Style Sheets (CSS) is a language used to control the presentation and layout of web pages. CSS
+                enables you to apply styles to HTML elements, making your web pages more visually appealing and easier
+                to manage. By separating content from design, CSS allows for greater flexibility and control over the
+                look of your website.</p>
+
+            <h3>What is CSS?</h3>
+            <p>CSS is a stylesheet language that describes how HTML elements should be displayed on screen, paper, or
+                other media. It allows you to specify the appearance of text, colors, margins, spacing, layout, and
+                more. CSS can be applied inline, embedded within HTML, or linked as an external stylesheet.</p>
+
+            <h3>Why Use CSS?</h3>
+            <ul>
+                <li><strong>Separation of Content and Design:</strong> By separating the HTML content from the CSS
+                    design, you can maintain and update styles independently of the content.</li>
+                <li><strong>Consistency:</strong> CSS ensures a consistent look and feel across all pages of a website
+                    by applying the same styles to multiple pages.</li>
+                <li><strong>Flexibility:</strong> CSS allows for easy modifications and adjustments to styles, enabling
+                    responsive design and better user experience on various devices.</li>
+                <li><strong>Improved Maintenance:</strong> Using CSS reduces code duplication, making it easier to
+                    manage and maintain the styles of your website.</li>
+            </ul>
+
+            <h3>CSS Syntax</h3>
+            <p>The syntax of CSS is simple and consists of a set of rules. Each rule has a selector and a declaration
+                block. The selector identifies the HTML elements to be styled, while the declaration block contains one
+                or more declarations separated by semicolons. Each declaration includes a property and a value,
+                separated by a colon.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        selector {
+            property: value;
+        }
+        </code>
+            </pre>
+
+            <h3>Example: Basic CSS Rule</h3>
+            <p>Here’s an example of a basic CSS rule that sets the color of all <code>&lt;p&gt;</code> elements to blue:
+            </p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        p {
+            color: blue;
+        }
+        </code>
+            </pre>
+
+            <h3>Including CSS in Your HTML</h3>
+            <p>CSS can be included in an HTML document in three ways:</p>
+            <ul>
+                <li><strong>Inline Styles:</strong> Apply styles directly to individual HTML elements using the
+                    <code>style</code> attribute. This method is useful for quick changes but is not recommended for
+                    maintaining large-scale styles.</li>
+                <li><strong>Internal Styles:</strong> Include CSS rules within the <code>&lt;style&gt;</code> tag inside
+                    the <code>&lt;head&gt;</code> section of your HTML document. This method is suitable for single-page
+                    styles.</li>
+                <li><strong>External Styles:</strong> Link to an external CSS file using the <code>&lt;link&gt;</code>
+                    tag in the <code>&lt;head&gt;</code> section. This method is ideal for applying styles to multiple
+                    pages and maintaining consistent design across your site.</li>
+            </ul>
+
+            <h3>Example: Internal and External CSS</h3>
+            <p>Here’s an example of using internal and external CSS:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        <!-- Internal CSS -->
+        &lt;style&gt;
+            body {
+                background-color: #f0f0f0;
+            }
+            h1 {
+                color: #333;
+            }
+        &lt;/style&gt;
+        
+        <!-- External CSS (link to styles.css file) -->
+        &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt;
+        </code>
+            </pre>
+
+            <h3>CSS Best Practices</h3>
+            <ul>
+                <li><strong>Use External Stylesheets:</strong> For better organization and reusability, keep your CSS in
+                    external files.</li>
+                <li><strong>Keep Styles Organized:</strong> Group related styles together and use comments to describe
+                    different sections.</li>
+                <li><strong>Optimize CSS:</strong> Minimize and compress your CSS files to improve page load times.</li>
+                <li><strong>Follow Naming Conventions:</strong> Use meaningful class and ID names to make your CSS more
+                    readable and maintainable.</li>
+            </ul>
+
+            <h3>Additional Resources</h3>
+            <p>For more information on CSS, check out the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    target="_blank">MDN Web Docs on CSS</a> or explore tutorials on <a
+                    href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS Tutorial</a> and <a
+                    href="https://www.codecademy.com/learn/learn-css" target="_blank">Codecademy CSS Course</a>.</p>
         </section>
+
+
+
         <section id="topic3">
             <h2>CSS Syntax</h2>
-            <p>Details about CSS Syntax...</p>
+            <p>CSS syntax is used to describe how the elements on a web page should be styled. Understanding CSS syntax
+                is crucial for effectively applying styles to HTML documents. CSS syntax consists of selectors and
+                declaration blocks, which work together to define how elements are presented.</p>
+
+            <h3>CSS Rule Structure</h3>
+            <p>A CSS rule is made up of a selector and a declaration block. The selector targets the HTML element(s) to
+                be styled, while the declaration block contains one or more declarations separated by semicolons. Each
+                declaration includes a property and a value, separated by a colon.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        selector {
+            property: value;
+        }
+        </code>
+            </pre>
+
+            <h3>Example: Basic CSS Rule</h3>
+            <p>Here's a basic CSS rule that sets the color of all <code>&lt;p&gt;</code> elements to blue:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        p {
+            color: blue;
+        }
+        </code>
+            </pre>
+
+            <h3>Selectors</h3>
+            <p>Selectors are patterns used to select the elements you want to style. They determine which HTML elements
+                the CSS rules will apply to. Common types of selectors include:</p>
+            <ul>
+                <li><strong>Element Selector:</strong> Selects elements based on their tag name. Example:
+                    <code>h1</code> selects all <code>&lt;h1&gt;</code> elements.</li>
+                <li><strong>Class Selector:</strong> Selects elements with a specific class attribute. Prefixed with a
+                    dot (<code>.</code>). Example: <code>.my-class</code> selects all elements with
+                    <code>class="my-class"</code>.</li>
+                <li><strong>ID Selector:</strong> Selects an element with a specific id attribute. Prefixed with a hash
+                    (<code>#</code>). Example: <code>#my-id</code> selects the element with <code>id="my-id"</code>.
+                </li>
+                <li><strong>Attribute Selector:</strong> Selects elements based on an attribute or its value. Example:
+                    <code>[type="text"]</code> selects input elements with <code>type="text"</code>.</li>
+            </ul>
+
+            <h3>Example: CSS Selectors</h3>
+            <p>Here’s an example demonstrating the use of different CSS selectors:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Element Selector */
+        h2 {
+            color: green;
+        }
+        
+        /* Class Selector */
+        .button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        /* ID Selector */
+        #main-header {
+            font-size: 36px;
+        }
+        
+        /* Attribute Selector */
+        input[type="email"] {
+            border: 1px solid #ddd;
+        }
+        </code>
+            </pre>
+
+            <h3>Grouping Selectors</h3>
+            <p>You can group multiple selectors that share the same style rules by separating them with commas. This
+                reduces redundancy and simplifies your CSS:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Grouping selectors */
+        h1, h2, h3 {
+            color: #333;
+        }
+        </code>
+            </pre>
+
+            <h3>Combining Selectors</h3>
+            <p>CSS allows you to combine selectors to target elements more precisely. For example:</p>
+            <ul>
+                <li><strong>Descendant Selector:</strong> Selects elements that are nested within a specific element.
+                    Example: <code>div p</code> selects all <code>&lt;p&gt;</code> elements inside a
+                    <code>&lt;div&gt;</code> element.</li>
+                <li><strong>Child Selector:</strong> Selects elements that are direct children of a specific element.
+                    Example: <code>ul > li</code> selects all <code>&lt;li&gt;</code> elements that are direct children
+                    of a <code>&lt;ul&gt;</code> element.</li>
+                <li><strong>Adjacent Sibling Selector:</strong> Selects an element that is immediately preceded by a
+                    specific element. Example: <code>h1 + p</code> selects the first <code>&lt;p&gt;</code> element
+                    immediately following an <code>&lt;h1&gt;</code> element.</li>
+                <li><strong>General Sibling Selector:</strong> Selects all elements that are siblings of a specific
+                    element. Example: <code>h1 ~ p</code> selects all <code>&lt;p&gt;</code> elements that are siblings
+                    of an <code>&lt;h1&gt;</code> element.</li>
+            </ul>
+
+            <h3>Example: Combining Selectors</h3>
+            <p>Here’s an example of combining selectors:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Descendant Selector */
+        article p {
+            font-size: 14px;
+        }
+        
+        /* Child Selector */
+        nav > ul {
+            list-style-type: none;
+        }
+        
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            margin-top: 0;
+        }
+        
+        /* General Sibling Selector */
+        h2 ~ p {
+            color: #666;
+        }
+        </code>
+            </pre>
+
+            <h3>Additional Resources</h3>
+            <p>For more detailed information about CSS syntax and selectors, you can visit the <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs on CSS</a> or
+                explore tutorials on <a href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS Tutorial</a>
+                and <a href="https://www.codecademy.com/learn/learn-css" target="_blank">Codecademy CSS Course</a>.</p>
         </section>
+
+
+
         <section id="topic4">
             <h2>CSS Selectors</h2>
-            <p>Details about CSS Selectors...</p>
+            <p>CSS selectors are used to target the HTML elements you want to style. By using selectors, you can apply
+                styles to specific elements, classes, IDs, attributes, and more. Understanding CSS selectors is
+                essential for effectively styling web pages and controlling the presentation of your content.</p>
+
+            <h3>Types of CSS Selectors</h3>
+            <p>CSS selectors can be categorized into various types based on how they target elements. Here are some
+                common types:</p>
+
+            <h4>Element Selector</h4>
+            <p>The element selector targets HTML elements based on their tag names. It applies the specified styles to
+                all elements of that type.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Targets all &lt;p&gt; elements */
+        p {
+            color: blue;
+        }
+        </code>
+            </pre>
+
+            <h4>Class Selector</h4>
+            <p>The class selector targets elements with a specific class attribute. It is prefixed with a dot
+                (<code>.</code>) and applies styles to all elements with that class.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Targets elements with class "highlight" */
+        .highlight {
+            background-color: yellow;
+        }
+        </code>
+            </pre>
+
+            <h4>ID Selector</h4>
+            <p>The ID selector targets a unique element with a specific ID attribute. It is prefixed with a hash
+                (<code>#</code>) and should be used for styling a single element on the page.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Targets the element with id "main-header" */
+        #main-header {
+            font-size: 24px;
+            color: #333;
+        }
+        </code>
+            </pre>
+
+            <h4>Attribute Selector</h4>
+            <p>The attribute selector targets elements based on their attributes or attribute values. It allows for more
+                specific styling based on the presence or value of an attribute.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Targets input elements with type "text" */
+        input[type="text"] {
+            border: 1px solid #ccc;
+        }
+        </code>
+            </pre>
+
+            <h4>Descendant Selector</h4>
+            <p>The descendant selector targets elements that are nested within a specified parent element. It selects
+                elements based on their hierarchy in the document structure.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Targets all &lt;p&gt; elements inside &lt;div&gt; elements */
+        div p {
+            color: green;
+        }
+        </code>
+            </pre>
+
+            <h4>Child Selector</h4>
+            <p>The child selector targets elements that are direct children of a specified parent element. It uses the
+                greater-than sign (<code>&gt;</code>) to indicate direct parent-child relationships.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Targets &lt;li&gt; elements that are direct children of &lt;ul&gt; */
+        ul > li {
+            list-style-type: none;
+        }
+        </code>
+            </pre>
+
+            <h4>Adjacent Sibling Selector</h4>
+            <p>The adjacent sibling selector targets an element that is immediately preceded by a specified element. It
+                uses the plus sign (<code>+</code>) to indicate immediate adjacency.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Targets the first &lt;p&gt; element immediately following an &lt;h2&gt; element */
+        h2 + p {
+            margin-top: 0;
+        }
+        </code>
+            </pre>
+
+            <h4>General Sibling Selector</h4>
+            <p>The general sibling selector targets all elements that are siblings of a specified element. It uses the
+                tilde sign (<code>~</code>) to select all matching siblings.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Targets all &lt;p&gt; elements that are siblings of an &lt;h2&gt; element */
+        h2 ~ p {
+            color: #666;
+        }
+        </code>
+            </pre>
+
+            <h3>Example: Combining Selectors</h3>
+            <p>Here’s an example demonstrating the use of various CSS selectors:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Element Selector */
+        h1 {
+            color: navy;
+        }
+        
+        /* Class Selector */
+        .button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        /* ID Selector */
+        #footer {
+            text-align: center;
+        }
+        
+        /* Descendant Selector */
+        article p {
+            font-size: 16px;
+        }
+        
+        /* Child Selector */
+        ul > li {
+            padding: 5px;
+        }
+        
+        /* Adjacent Sibling Selector */
+        h2 + p {
+            font-style: italic;
+        }
+        
+        /* General Sibling Selector */
+        h2 ~ p {
+            color: darkgray;
+        }
+        </code>
+            </pre>
+
+            <h3>Additional Resources</h3>
+            <p>For more information on CSS selectors and their usage, you can visit the <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors" target="_blank">MDN Web Docs
+                    on CSS Selectors</a> or explore tutorials on <a
+                    href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">W3Schools CSS Selectors
+                    Tutorial</a> and <a href="https://www.codecademy.com/learn/learn-css" target="_blank">Codecademy CSS
+                    Course</a>.</p>
         </section>
+
+
+
         <section id="topic5">
             <h2>CSS Properties</h2>
-            <p>Details about CSS Properties...</p>
+            <p>CSS properties are used to define the style of elements in an HTML document. Each property controls a
+                specific aspect of an element's appearance, such as color, font, layout, and more. Understanding CSS
+                properties is essential for customizing the look and feel of web pages.</p>
+
+            <h3>Common CSS Properties</h3>
+            <p>Here are some commonly used CSS properties and their purposes:</p>
+
+            <h4>Color</h4>
+            <p>The <code>color</code> property sets the color of text. You can use color names, hexadecimal values, RGB,
+                RGBA, HSL, or HSLA values.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Sets the text color to red */
+        p {
+            color: red;
+        }
+        
+        /* Sets the text color using hexadecimal */
+        h1 {
+            color: #333;
+        }
+        
+        /* Sets the text color using RGB */
+        h2 {
+            color: rgb(0, 128, 0);
+        }
+        
+        /* Sets the text color using RGBA (with transparency) */
+        h3 {
+            color: rgba(0, 0, 255, 0.5);
+        }
+        </code>
+            </pre>
+
+            <h4>Font</h4>
+            <p>The <code>font-family</code> property sets the font type for text. The <code>font-size</code> property
+                specifies the size of the font, and the <code>font-weight</code> property adjusts the thickness of the
+                text.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Sets the font family */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Sets the font size */
+        h1 {
+            font-size: 24px;
+        }
+        
+        /* Sets the font weight */
+        strong {
+            font-weight: bold;
+        }
+        </code>
+            </pre>
+
+            <h4>Text Alignment</h4>
+            <p>The <code>text-align</code> property sets the horizontal alignment of text within its containing element.
+            </p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Aligns text to the center */
+        h1 {
+            text-align: center;
+        }
+        
+        /* Aligns text to the right */
+        p {
+            text-align: right;
+        }
+        </code>
+            </pre>
+
+            <h4>Background</h4>
+            <p>The <code>background-color</code> property sets the background color of an element. The
+                <code>background-image</code> property allows you to set an image as the background of an element.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Sets the background color */
+        div {
+            background-color: #f4f4f4;
+        }
+        
+        /* Sets a background image */
+        header {
+            background-image: url('header-background.jpg');
+            background-size: cover;
+        }
+        </code>
+            </pre>
+
+            <h4>Margin and Padding</h4>
+            <p>The <code>margin</code> property sets the space outside an element’s border, while the
+                <code>padding</code> property sets the space inside the element’s border.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Sets the margin */
+        div {
+            margin: 20px;
+        }
+        
+        /* Sets the padding */
+        section {
+            padding: 15px;
+        }
+        </code>
+            </pre>
+
+            <h4>Border</h4>
+            <p>The <code>border</code> property is used to define the border around an element. You can specify the
+                width, style, and color of the border.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Sets a solid border */
+        img {
+            border: 2px solid black;
+        }
+        
+        /* Sets a dashed border */
+        button {
+            border: 1px dashed red;
+        }
+        </code>
+            </pre>
+
+            <h3>Example: Combining CSS Properties</h3>
+            <p>Here’s an example demonstrating the use of multiple CSS properties to style an element:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Styles a button with various properties */
+        button {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            font-size: 16px; /* Font size */
+            padding: 10px 20px; /* Padding */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+        </code>
+            </pre>
+
+            <h3>Additional Resources</h3>
+            <p>For more information on CSS properties and how to use them, you can visit the <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs on CSS</a> or
+                explore tutorials on <a href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS Tutorial</a>
+                and <a href="https://www.codecademy.com/learn/learn-css" target="_blank">Codecademy CSS Course</a>.</p>
         </section>
+
+
+
         <section id="topic6">
             <h2>CSS Box Model</h2>
-            <p>Details about CSS Box Model...</p>
+            <p>The CSS Box Model is a fundamental concept that defines how elements are rendered on a web page. It
+                describes the rectangular boxes generated for elements and how the size and spacing of these boxes are
+                calculated. Understanding the box model is crucial for controlling the layout and design of web pages.
+            </p>
+
+            <h3>Components of the Box Model</h3>
+            <p>The CSS Box Model consists of four key components:</p>
+
+            <h4>Content</h4>
+            <p>The <strong>content</strong> area is where the text and images appear. It is the innermost part of the
+                box model, defined by the width and height properties of the element.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Content area */
+        div {
+            width: 200px; /* Width of the content area */
+            height: 100px; /* Height of the content area */
+        }
+        </code>
+            </pre>
+
+            <h4>Padding</h4>
+            <p>The <strong>padding</strong> area surrounds the content and is used to create space between the content
+                and the element’s border. Padding is added inside the element’s box and increases the total size of the
+                element.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Padding around the content */
+        div {
+            padding: 20px; /* Padding on all sides */
+        }
+        </code>
+            </pre>
+
+            <h4>Border</h4>
+            <p>The <strong>border</strong> area surrounds the padding and content. It is used to add a border around the
+                element. The border’s width, style, and color can be customized.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Border around the padding */
+        div {
+            border: 2px solid black; /* Border width, style, and color */
+        }
+        </code>
+            </pre>
+
+            <h4>Margin</h4>
+            <p>The <strong>margin</strong> area is the outermost layer and creates space between the element and other
+                elements on the page. Margins are added outside the border and do not affect the element’s size but
+                affect the positioning of elements.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Margin outside the border */
+        div {
+            margin: 30px; /* Margin on all sides */
+        }
+        </code>
+            </pre>
+
+            <h3>Box Model Example</h3>
+            <p>Here’s an example demonstrating how the different components of the box model interact:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Complete box model styling */
+        div {
+            width: 200px; /* Content width */
+            padding: 20px; /* Padding around the content */
+            border: 2px solid black; /* Border around the padding */
+            margin: 30px; /* Margin outside the border */
+        }
+        </code>
+            </pre>
+            <p>The above code creates a <code>div</code> element with a width of 200px, 20px of padding on all sides, a
+                2px solid black border, and a 30px margin around it. The total width of the element, including padding,
+                border, and margin, is calculated as follows:</p>
+            <ul>
+                <li>Content width: 200px</li>
+                <li>Padding: 20px on each side (total 40px)</li>
+                <li>Border: 2px on each side (total 4px)</li>
+                <li>Margin: 30px on each side (total 60px)</li>
+            </ul>
+
+            <h3>Box Sizing</h3>
+            <p>The <code>box-sizing</code> property can be used to alter the default box model behavior. By default, the
+                width and height properties only apply to the content area. The <code>box-sizing</code> property allows
+                you to include padding and border in the element’s total width and height calculations.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Include padding and border in the element’s total width and height */
+        div {
+            box-sizing: border-box;
+            width: 200px; /* Total width including padding and border */
+            padding: 20px;
+            border: 2px solid black;
+        }
+        </code>
+            </pre>
+
+            <h3>Additional Resources</h3>
+            <p>For more information on the CSS Box Model, you can visit the <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model" target="_blank">MDN Web Docs
+                    on CSS Box Model</a> or explore tutorials on <a
+                    href="https://www.w3schools.com/css/css_boxmodel.asp" target="_blank">W3Schools CSS Box Model
+                    Tutorial</a> and <a href="https://www.codecademy.com/learn/learn-css" target="_blank">Codecademy CSS
+                    Course</a>.</p>
         </section>
+
+
+
         <section id="topic7">
             <h2>CSS Flexbox</h2>
-            <p>Details about CSS Flexbox...</p>
+            <p>CSS Flexbox is a layout module designed to provide an efficient way to lay out, align, and distribute
+                space among items in a container. It is particularly useful for creating complex layouts with ease,
+                especially when dealing with dynamic or unknown content sizes.</p>
+
+            <h3>Basics of Flexbox</h3>
+            <p>The Flexbox layout model consists of a flex container and flex items. The flex container is the parent
+                element that holds the flex items, and the flex items are the children that are laid out according to
+                Flexbox rules.</p>
+
+            <h4>Flex Container Properties</h4>
+            <p>Here are some key properties for the flex container:</p>
+
+            <ul>
+                <li><strong>display:</strong> Defines the container as a flex container.</li>
+                <li><strong>flex-direction:</strong> Determines the direction in which flex items are placed in the flex
+                    container.</li>
+                <li><strong>justify-content:</strong> Aligns flex items along the main axis of the flex container.</li>
+                <li><strong>align-items:</strong> Aligns flex items along the cross axis of the flex container.</li>
+                <li><strong>flex-wrap:</strong> Specifies whether flex items should wrap onto multiple lines.</li>
+            </ul>
+
+            <h4>Example: Basic Flexbox Layout</h4>
+            <p>Here’s an example of a simple Flexbox layout:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Flex container styling */
+        .container {
+            display: flex; /* Defines the container as a flex container */
+            flex-direction: row; /* Arranges items in a row (default) */
+            justify-content: space-between; /* Distributes space between items */
+            align-items: center; /* Aligns items vertically in the center */
+        }
+        
+        /* Flex item styling */
+        .item {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        </code>
+            </pre>
+
+            <div class="container">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+            </div>
+
+            <h4>Flex Item Properties</h4>
+            <p>Flex items also have specific properties that control their size and alignment:</p>
+
+            <ul>
+                <li><strong>flex-grow:</strong> Defines the ability of a flex item to grow relative to the other items.
+                </li>
+                <li><strong>flex-shrink:</strong> Defines the ability of a flex item to shrink relative to the other
+                    items.</li>
+                <li><strong>flex-basis:</strong> Defines the initial size of a flex item before space distribution.</li>
+                <li><strong>align-self:</strong> Allows the override of the <code>align-items</code> property for a
+                    specific item.</li>
+            </ul>
+
+            <h4>Example: Flex Item Properties</h4>
+            <p>Here’s how you can use flex item properties to control item sizes:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Flex container styling */
+        .container {
+            display: flex;
+        }
+        
+        /* Flex item styling */
+        .item {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        
+        /* Flex item specific styling */
+        .item-1 {
+            flex-grow: 2; /* This item will grow twice as much as others */
+        }
+        
+        .item-2 {
+            flex-shrink: 1; /* This item will shrink if necessary */
+        }
+        
+        .item-3 {
+            flex-basis: 100px; /* This item will start with a base size of 100px */
+        }
+        </code>
+            </pre>
+
+            <h4>Flexbox Wrapping</h4>
+            <p>The <code>flex-wrap</code> property allows flex items to wrap onto multiple lines if there is not enough
+                space on one line:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Flex container with wrapping */
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+        }
+        </code>
+            </pre>
+
+            <h4>Additional Resources</h4>
+            <p>For more information on CSS Flexbox, you can visit the <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout" target="_blank">MDN
+                    Web Docs on Flexbox</a> or explore tutorials on <a
+                    href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3Schools Flexbox Tutorial</a>
+                and <a href="https://www.codecademy.com/learn/learn-flexbox" target="_blank">Codecademy Flexbox
+                    Course</a>.</p>
         </section>
+
+
+
         <section id="topic8">
             <h2>CSS Grid</h2>
-            <p>Details about CSS Grid...</p>
+            <p>CSS Grid Layout is a powerful layout system for creating complex web designs with a grid-based approach.
+                It provides a way to create both rows and columns, and to place items into these grid cells. This allows
+                for more precise and flexible layouts compared to traditional CSS methods.</p>
+
+            <h3>Basics of CSS Grid</h3>
+            <p>CSS Grid is defined by two key components:</p>
+            <ul>
+                <li><strong>Grid Container:</strong> The parent element that holds the grid items. It is defined using
+                    the <code>display: grid;</code> property.</li>
+                <li><strong>Grid Items:</strong> The child elements of the grid container that are placed into the grid
+                    cells.</li>
+            </ul>
+
+            <h4>Defining a Grid Container</h4>
+            <p>To create a grid container, you need to apply the <code>display: grid;</code> property to the container
+                element. You can then define the grid structure using properties like <code>grid-template-rows</code>
+                and <code>grid-template-columns</code>.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Basic grid container styling */
+        .container {
+            display: grid; /* Defines the container as a grid container */
+            grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
+            grid-template-rows: repeat(2, 100px); /* Creates two rows with 100px height */
+        }
+        </code>
+            </pre>
+
+            <h4>Placing Grid Items</h4>
+            <p>Grid items are automatically placed into grid cells based on the defined grid structure. You can also
+                specify their position using properties like <code>grid-column</code> and <code>grid-row</code>.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Grid item styling */
+        .item {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        
+        /* Specific grid item positioning */
+        .item-1 {
+            grid-column: 1 / 3; /* Spans from the 1st to the 3rd column */
+            grid-row: 1; /* Occupies the 1st row */
+        }
+        
+        .item-2 {
+            grid-column: 3; /* Occupies the 3rd column */
+            grid-row: 1 / 3; /* Spans from the 1st to the 3rd row */
+        }
+        
+        .item-3 {
+            grid-column: 1 / 4; /* Spans from the 1st to the 4th column */
+            grid-row: 2; /* Occupies the 2nd row */
+        }
+        </code>
+            </pre>
+
+            <h4>Grid Template Areas</h4>
+            <p>CSS Grid also allows you to define grid layout areas using the <code>grid-template-areas</code> property.
+                This can be useful for creating more complex layouts.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Grid container with named areas */
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "sidebar content content"
+                "footer footer footer";
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 50px 1fr 50px;
+        }
+        
+        /* Grid item styling */
+        .header {
+            grid-area: header;
+        }
+        
+        .sidebar {
+            grid-area: sidebar;
+        }
+        
+        .content {
+            grid-area: content;
+        }
+        
+        .footer {
+            grid-area: footer;
+        }
+        </code>
+            </pre>
+
+            <h4>Responsive Design with Grid</h4>
+            <p>CSS Grid is also well-suited for responsive design. You can use media queries to adjust the grid layout
+                based on screen size.</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        /* Responsive grid layout */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Default: 3 columns */
+            grid-template-rows: repeat(2, 100px);
+        }
+        
+        /* Adjust layout for smaller screens */
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr; /* 1 column on small screens */
+                grid-template-rows: repeat(6, 100px); /* 6 rows */
+            }
+        }
+        </code>
+            </pre>
+
+            <h4>Additional Resources</h4>
+            <p>For more information on CSS Grid, you can visit the <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">MDN Web Docs
+                    on CSS Grid Layout</a> or explore tutorials on <a href="https://www.w3schools.com/css/css_grid.asp"
+                    target="_blank">W3Schools CSS Grid Tutorial</a> and <a
+                    href="https://www.codecademy.com/learn/learn-css" target="_blank">Codecademy CSS Course</a>.</p>
         </section>
+
+
     </main>
 </body>
 
