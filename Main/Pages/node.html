@@ -1,3 +1,4 @@
+Shrey, [12-08-2024 03:17 PM]
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +20,7 @@
         </nav>
         <nav class="top-nav">
             <ul>
-                <li><a href="html.html">HTML</a></li>
+                <li><a href="html.html">HTML</a></li>a
                 <li><a href="css.html">CSS</a></li>
                 <li><a href="js.html">JS</a></li>
                 <li><a href="python.html">Python</a></li>
@@ -29,621 +30,763 @@
     </header>
     <div class="side-navbar">
         <ul>
-            <li><a href="#topic1">JS Home</a></li>
-            <li><a href="#topic2">JS Introduction</a></li>
-            <li><a href="#topic3">JS Syntax</a></li>
-            <li><a href="#topic4">JS Variables</a></li>
-            <li><a href="#topic5">JS Operators</a></li>
-            <li><a href="#topic6">JS Functions</a></li>
-            <li><a href="#topic7">JS Events</a></li>
-            <li><a href="#topic8">JS Objects</a></li>
+            <li><a href="#topic1">Node.js Home</a></li>
+            <li><a href="#topic2">Node.js Introduction</a></li>
+            <li><a href="#topic3">Node.js Installation</a></li>
+            <li><a href="#topic4">Node.js Modules</a></li>
+            <li><a href="#topic5">Node.js HTTP</a></li>
+            <li><a href="#topic6">Node.js File System</a></li>
+            <li><a href="#topic7">Node.js Events</a></li>
+            <li><a href="#topic8">Node.js NPM</a></li>
         </ul>
     </div>
     <main>
-        <h2 class="main">JavaScript Tutorial</h2>
-        <p class="intro">JavaScript is the programming language of the Web.</p>
-        <p class="intro">With JavaScript, you can create dynamic and interactive web content.</p>
-        <p class="intro">JavaScript is easy to learn - You will enjoy it!</p>
+        <h2 class="main">Node.js Tutorial</h2>
+        <p class="intro">Node.js is a powerful JavaScript runtime built on Chrome's V8 engine.</p>
+        <p class="intro">With Node.js, you can create scalable network applications and handle multiple connections
+            efficiently.</p>
+        <p class="intro">Node.js is easy to learn and versatile - You will enjoy it!</p>
 
-        <section id="topic8">
-            <h2>JavaScript Overview</h2>
-            <p>JavaScript is a versatile programming language primarily used for creating interactive and dynamic content on the web. It is an essential part of web development, enabling developers to create complex features like animations, form validations, and interactive maps.</p>
-        
-            <h3>Basics of JavaScript</h3>
-            <p>JavaScript operates within the web browser and interacts with HTML and CSS to modify the document's structure and style dynamically. Here are the key concepts:</p>
+
+        <section id="topic1">
+            <h2>Node.js Home</h2>
+            <p>Welcome to the Node.js home page! Node.js is a powerful JavaScript runtime built on Chrome's V8
+                JavaScript engine. It allows developers to run JavaScript code on the server side, providing the
+                capability to build fast and scalable network applications.</p>
+
+            <h3>Key Features of Node.js</h3>
             <ul>
-                <li><strong>Variables:</strong> Used to store data values that can be referenced and manipulated throughout the code.</li>
-                <li><strong>Functions:</strong> Blocks of code designed to perform a particular task. They can be invoked or called when needed.</li>
-                <li><strong>Events:</strong> Actions or occurrences that happen in the browser, such as clicks or keypresses, which JavaScript can respond to.</li>
+                <li><strong>Asynchronous and Event-Driven:</strong> Node.js uses an event-driven, non-blocking I/O model
+                    that makes it efficient and suitable for real-time applications.</li>
+                <li><strong>Single Programming Language:</strong> With Node.js, you can use JavaScript for both
+                    client-side and server-side code, streamlining development.</li>
+                <li><strong>npm - Node Package Manager:</strong> Node.js comes with npm, the world's largest ecosystem
+                    of open source libraries and tools that you can use to enhance your projects.</li>
+                <li><strong>Scalability:</strong> Node.js is designed for scalability and can handle a large number of
+                    concurrent connections with minimal overhead.</li>
+                <li><strong>Community and Support:</strong> Node.js has a vibrant community and extensive documentation,
+                    which provides a wealth of resources and support for developers.</li>
             </ul>
-        
-            <h4>Declaring Variables</h4>
-            <p>Variables in JavaScript are declared using the <code>var</code>, <code>let</code>, or <code>const</code> keywords. The choice of keyword depends on the scope and immutability of the variable.</p>
+
+            <h3>Getting Started with Node.js</h3>
+            <p>To get started with Node.js, you can visit the <a href="https://nodejs.org">official Node.js website</a>
+                where you'll find comprehensive resources, including installation guides, tutorials, and API
+                documentation. Whether you're new to Node.js or an experienced developer, the website offers valuable
+                information to help you make the most of this powerful platform.</p>
+        </section>
+
+        Shrey, [12-08-2024 03:17 PM]
+        <section id="topic2">
+            <h2>Node.js Introduction</h2>
+            <p>Node.js is a runtime environment that allows you to run JavaScript on the server side. Unlike traditional
+                web servers that handle HTTP requests in a synchronous manner, Node.js uses an event-driven,
+                non-blocking I/O model which makes it lightweight and efficient, especially for building scalable
+                network applications.</p>
+
+            <h3>History and Evolution</h3>
+            <p>Node.js was created by Ryan Dahl in 2009, with the aim of providing an efficient way to handle I/O
+                operations. It is built on the V8 JavaScript engine developed by Google, which compiles JavaScript code
+                directly to native machine code, allowing for high performance.</p>
+
+            <h3>Core Concepts</h3>
+            <ul>
+                <li><strong>Event-Driven Architecture:</strong> Node.js operates on an event-driven model, which means
+                    that operations like reading from a file or making a network request do not block the execution of
+                    other code. Instead, they use callbacks to signal when an operation has completed.</li>
+                <li><strong>Non-Blocking I/O:</strong> Traditional server models use synchronous I/O operations, which
+                    can block other operations. Node.js uses non-blocking I/O operations to allow multiple tasks to be
+                    performed simultaneously, increasing efficiency.</li>
+                <li><strong>Single-Threaded Event Loop:</strong> Node.js runs in a single-threaded environment but uses
+                    an event loop to handle multiple connections efficiently. This design helps to manage concurrency
+                    without the complexity of multi-threaded programming.</li>
+                <li><strong>npm (Node Package Manager):</strong> npm is a key feature of Node.js, providing a repository
+                    of packages and modules that you can easily integrate into your projects. It helps manage project
+                    dependencies and streamline development.</li>
+            </ul>
+
+            <h3>Use Cases</h3>
+            <p>Node.js is well-suited for a variety of applications, including:</p>
+            <ul>
+                <li><strong>Real-Time Applications:</strong> Chat applications, online gaming, and collaborative tools
+                    benefit from Node.js's ability to handle real-time data.</li>
+                <li><strong>API Development:</strong> Node.js is a popular choice for building RESTful APIs due to its
+                    asynchronous nature and ease of integrating with databases.</li>
+                <li><strong>Microservices:</strong> Its modular architecture makes Node.js a good fit for building
+                    microservices, which are small, independently deployable services that work together to create a
+                    larger application.</li>
+            </ul>
+
+            <h3>Getting Started</h3>
+            <p>To start with Node.js, you can follow the installation guide on the <a
+                    href="https://nodejs.org/en/">official Node.js website</a>. There, you'll find tutorials,
+                documentation, and resources to help you begin your journey with Node.js.</p>
+        </section>
+
+        Shrey, [12-08-2024 03:17 PM]
+        <section id="topic3">
+            <h2>Node.js Installation</h2>
+            <p>Installing Node.js is a straightforward process and involves downloading the appropriate installer for
+                your operating system. Node.js also includes npm (Node Package Manager), which helps manage project
+                dependencies.</p>
+
+            <h3>Installation Steps</h3>
+            <h4>For Windows</h4>
+            <ol>
+                <li>Visit the <a href="https://nodejs.org/en/download/">Node.js download page</a>.</li>
+                <li>Download the Windows Installer (.msi) for the LTS (Long Term Support) version or the Current
+                    version, depending on your preference.</li>
+                <li>Run the installer and follow the installation wizard. Make sure to check the box that says
+                    "Automatically install the necessary tools..." if prompted.</li>
+                <li>After installation, open a command prompt and verify the installation by running:
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>node -v</code>
+        <code>npm -v</code>
+                    </pre>
+                    You should see the version numbers for Node.js and npm.
+                </li>
+            </ol>
+
+            <h4>For macOS</h4>
+            <ol>
+                <li>Visit the <a href="https://nodejs.org/en/download/">Node.js download page</a>.</li>
+                <li>Download the macOS Installer (.pkg) for the LTS or Current version.</li>
+                <li>Open the downloaded .pkg file and follow the installation prompts.</li>
+                <li>Verify the installation by opening a terminal and running:
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>node -v</code>
+        <code>npm -v</code>
+                    </pre>
+                    You should see the version numbers for Node.js and npm.
+                </li>
+            </ol>
+
+            <h4>For Linux</h4>
+            <ol>
+                <li>Open a terminal window.</li>
+                <li>Update your package index:
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>sudo apt update</code>
+                    </pre>
+                </li>
+                <li>Install Node.js using a package manager. For Debian-based distributions (like Ubuntu), you can use:
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>sudo apt install nodejs npm</code>
+                    </pre>
+                </li>
+                <li>Alternatively, you can use Node Version Manager (nvm) to install and manage multiple versions of
+                    Node.js. Follow the instructions on the <a href="https://github.com/nvm-sh/nvm">nvm GitHub page</a>
+                    for installation.</li>
+                <li>Verify the installation by running:
+                    <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>node -v</code>
+        <code>npm -v</code>
+                    </pre>
+                    You should see the version numbers for Node.js and npm.
+                </li>
+            </ol>
+
+            <h3>Troubleshooting</h3>
+            <p>If you encounter issues during installation, consider checking:</p>
+            <ul>
+                <li>Ensure that your PATH environment variable includes the directory where Node.js is installed.</li>
+                <li>Consult the <a href="https://github.com/nodejs/node/issues">Node.js GitHub issues page</a> for
+                    common issues and solutions.</li>
+                <li>Check the <a href="https://nodejs.org/en/support/">Node.js support page</a> for additional resources
+                    and help.</li>
+            </ul>
+        </section>
+
+        Shrey, [12-08-2024 03:17 PM]
+        <section id="topic2">
+            <h2>Node.js Modules</h2>
+            <p>Modules in Node.js are a way to organize code into reusable pieces. Node.js uses the CommonJS module
+                system, which allows you to split your code into modules and import or export functionality as needed.
+                This modular approach helps in maintaining and managing code more effectively.</p>
+
+            <h3>Built-in Modules</h3>
+            <p>Node.js comes with several built-in modules that provide core functionality. You can use these modules
+                without any additional installation.</p>
+
+            <h4>Example of Using Built-in Modules</h4>
+            <p>Here's how you can use some of the built-in modules:</p>
             <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
         <code>
-        /* Declaring variables */
-        var name = "John"; // 'var' is function-scoped
-        let age = 25; // 'let' is block-scoped
-        const city = "New York"; // 'const' is block-scoped and immutable
-        </code>
-            </pre>
+        // Importing the 'fs' module for file system operations
+        const fs = require('fs');
         
-            <h4>Creating Functions</h4>
-            <p>Functions are created using the <code>function</code> keyword. You can define reusable blocks of code that perform specific tasks.</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        /* Basic function definition */
-        function greet() {
-            alert("Hello, World!"); // Displays an alert with the message
-        }
-        
-        /* Function with parameters */
-        function add(a, b) {
-            return a + b; // Returns the sum of two numbers
-        }
-        </code>
-            </pre>
-        
-            <h4>Handling Events</h4>
-            <p>JavaScript can listen for events such as clicks, mouse movements, or key presses, and respond accordingly. This allows for interactive web pages.</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        /* Event handling */
-        document.getElementById("myButton").addEventListener("click", function() {
-            alert("Button clicked!"); // Alert when the button is clicked
+        // Reading a file asynchronously
+        fs.readFile('example.txt', 'utf8', (err, data) => {
+            if (err) throw err;
+            console.log(data);
         });
         </code>
             </pre>
-        
-            <h4>JavaScript in HTML</h4>
-            <p>JavaScript can be included directly within HTML using the <code>&lt;script&gt;</code> tag. It can be placed in the <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> of the document, or it can be linked as an external file.</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        <!-- Inline JavaScript -->
-        <script>
-            document.write("This is written using JavaScript!");
-        </script>
-        
-        <!-- External JavaScript -->
-        <script src="script.js"></script>
-        </code>
-            </pre>
-        
-            <h4>JavaScript and the DOM</h4>
-            <p>The Document Object Model (DOM) represents the structure of a web page. JavaScript can manipulate the DOM to change content, styles, and structure dynamically.</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        /* Accessing and modifying the DOM */
-        document.getElementById("header").innerHTML = "New Header Text"; // Changes the text of the element with id 'header'
-        document.getElementById("header").style.color = "blue"; // Changes the text color to blue
-        </code>
-            </pre>
-        
-            <h4>Responsive Design with JavaScript</h4>
-            <p>JavaScript can be used to create responsive web designs by detecting the screen size and adjusting the content dynamically. This is often combined with CSS media queries for a more robust solution.</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        /* Responsive design with JavaScript */
-        if (window.innerWidth < 600) {
-            document.getElementById("container").style.flexDirection = "column"; // Adjusts layout for small screens
-        }
-        </code>
-            </pre>
-        
-            <h4>Additional Resources</h4>
-            <p>For more information on JavaScript, you can visit the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs on JavaScript</a> or explore tutorials on <a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript Tutorial</a> and <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Codecademy JavaScript Course</a>.</p>
-        </section>
-        
 
+            <h4>List of Common Built-in Modules</h4>
+            <ul>
+                <li><strong>fs:</strong> Provides file system-related functionality.</li>
+                <li><strong>http:</strong> Allows you to create HTTP servers and clients.</li>
+                <li><strong>path:</strong> Provides utilities for working with file and directory paths.</li>
+                <li><strong>os:</strong> Provides operating system-related utility methods and properties.</li>
+                <li><strong>events:</strong> Allows you to work with event-driven programming.</li>
+            </ul>
 
-        <section id="topic2">
-            <h2>JavaScript Introduction</h2>
-            <p>JavaScript is a high-level, interpreted programming language that is widely used in web development. It allows developers to create dynamic and interactive content, making websites more engaging and functional.</p>
-        
-            <h3>What is JavaScript?</h3>
-            <p>JavaScript is a versatile language that can be used on both the client-side and server-side of web development. It is one of the core technologies of the World Wide Web, alongside HTML and CSS.</p>
-            <ul>
-                <li><strong>Client-Side JavaScript:</strong> Runs in the browser and is primarily used for enhancing user interfaces, validating form inputs, creating animations, and responding to user interactions.</li>
-                <li><strong>Server-Side JavaScript:</strong> Runs on a server and is used to create dynamic web pages, manage databases, and handle HTTP requests and responses. Node.js is a popular runtime for server-side JavaScript.</li>
-            </ul>
-        
-            <h4>History of JavaScript</h4>
-            <p>JavaScript was created by Brendan Eich in 1995 while he was working at Netscape Communications Corporation. It was initially developed as a way to add interactivity to web pages. Over the years, JavaScript has evolved significantly and has become a full-fledged programming language used in a variety of applications.</p>
-        
-            <h4>Why Learn JavaScript?</h4>
-            <p>JavaScript is an essential skill for web developers. It is supported by all modern browsers and has a vast ecosystem of libraries and frameworks. Learning JavaScript opens up many opportunities in web development, including front-end, back-end, and full-stack development.</p>
-            <ul>
-                <li><strong>Versatility:</strong> JavaScript can be used for both client-side and server-side development.</li>
-                <li><strong>Interactivity:</strong> JavaScript enables the creation of interactive elements, enhancing user experience.</li>
-                <li><strong>Community Support:</strong> A large and active community provides a wealth of resources, tutorials, and tools for learning and development.</li>
-            </ul>
-        
-            <h4>Basic Syntax</h4>
-            <p>JavaScript syntax is the set of rules that define how a JavaScript program is constructed. Understanding the basic syntax is crucial for writing functional code.</p>
+            <h3>Creating Custom Modules</h3>
+            <p>You can also create your own modules to encapsulate functionality. Custom modules allow you to organize
+                your code and make it reusable across different parts of your application.</p>
+
+            <h4>Example of a Custom Module</h4>
+            <p>Here's how to create and use a custom module:</p>
             <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
         <code>
-        /* Basic JavaScript Syntax Example */
-        let greeting = "Hello, World!"; // Variable declaration
-        console.log(greeting); // Outputs 'Hello, World!' to the console
+        // math.js - Define a custom module
+        exports.add = function(a, b) {
+            return a + b;
+        };
+        
+        exports.subtract = function(a, b) {
+            return a - b;
+        };
+        
+        // app.js - Import and use the custom module
+        const math = require('./math');
+        
+        console.log(math.add(5, 3));       // Outputs: 8
+        console.log(math.subtract(5, 3));  // Outputs: 2
         </code>
             </pre>
+
+            <h3>Exporting and Importing Modules</h3>
+            <p>Modules in Node.js use <code>module.exports</code> to export functionality and <code>require()</code> to
+                import it. You can export individual functions, objects, or entire modules.</p>
+
+            <h4>Exporting Functionality</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Exporting a single function
+        module.exports = function(a, b) {
+            return a * b;
+        };
+        </code>
+            </pre>
+
+            <h4>Importing Functionality</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Importing the module
+        const multiply = require('./multiply');
         
-            <h4>Where to Use JavaScript</h4>
-            <p>JavaScript can be used in various scenarios, from simple webpage enhancements to complex web applications. Some common uses include:</p>
+        console.log(multiply(4, 5)); // Outputs: 20
+        </code>
+            </pre>
+
+            <h3>Module Resolution</h3>
+            <p>When you use <code>require()</code>, Node.js follows a specific resolution algorithm to locate and load
+                the requested module:</p>
             <ul>
-                <li><strong>Form Validation:</strong> Ensuring that user inputs meet specified criteria before submitting a form.</li>
-                <li><strong>Dynamic Content:</strong> Changing the content of a webpage without reloading it.</li>
-                <li><strong>Animations:</strong> Creating visual effects such as fades, slides, and other transitions.</li>
+                <li>If the module name is a core module (like <code>fs</code>), it loads the core module.</li>
+
+                Shrey, [12-08-2024 03:17 PM]
+                <li>If the module is a file, Node.js looks for a file in the directory relative to the current module.
+                </li>
+                <li>If the module is a directory, Node.js looks for an <code>index.js</code> file inside the directory.
+                </li>
+                <li>If the module is not found, Node.js throws an error.</li>
             </ul>
-        
-            <h4>Conclusion</h4>
-            <p>JavaScript is a powerful and essential tool for web developers. Whether you're building a simple webpage or a complex web application, JavaScript provides the functionality and interactivity that modern web users expect.</p>
         </section>
-        
+
 
 
         <section id="topic3">
-            <h2>JavaScript Syntax</h2>
-            <p>JavaScript syntax is the set of rules and guidelines that define how JavaScript code is written and interpreted by the browser. Understanding the syntax is crucial for writing effective and error-free code.</p>
-        
-            <h3>Basic Elements of JavaScript Syntax</h3>
-            <p>JavaScript syntax consists of various elements that come together to form a program. These include variables, data types, operators, expressions, and more.</p>
-        
-            <h4>Variables</h4>
-            <p>Variables are used to store data values that can be referenced and manipulated throughout the code. In JavaScript, variables are declared using the <code>var</code>, <code>let</code>, or <code>const</code> keywords.</p>
+            <h2>Node.js HTTP</h2>
+            <p>Node.js provides a built-in module called <code>http</code> that allows you to create HTTP servers and
+                clients. This module is essential for handling HTTP requests and responses in your Node.js applications.
+            </p>
+
+            <h3>Creating an HTTP Server</h3>
+            <p>You can create a basic HTTP server using the <code>http</code> module. Here’s how to set up a simple
+                server that listens for requests and responds with a message:</p>
             <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
         <code>
-        /* Variable declarations */
-        var x = 10;      // 'var' is function-scoped
-        let y = 20;      // 'let' is block-scoped
-        const z = 30;    // 'const' is block-scoped and cannot be reassigned
+        // Import the 'http' module
+        const http = require('http');
+        
+        // Create an HTTP server
+        const server = http.createServer((req, res) => {
+            // Set the response HTTP header with HTTP status and Content type
+            res.writeHead(200, {'Content-Type': 'text/plain'});
+            
+            // Send the response body
+            res.end('Hello World\n');
+        });
+        
+        // Listen on port 3000 and IP address 127.0.0.1
+        server.listen(3000, '127.0.0.1', () => {
+            console.log('Server running at http://127.0.0.1:3000/');
+        });
         </code>
             </pre>
-        
-            <h4>Data Types</h4>
-            <p>JavaScript supports several data types, including:</p>
-            <ul>
-                <li><strong>String:</strong> Represents text enclosed in single or double quotes, e.g., <code>"Hello"</code>.</li>
-                <li><strong>Number:</strong> Represents both integers and floating-point numbers, e.g., <code>42</code> or <code>3.14</code>.</li>
-                <li><strong>Boolean:</strong> Represents logical values, either <code>true</code> or <code>false</code>.</li>
-                <li><strong>Array:</strong> Represents a list of values, e.g., <code>[1, 2, 3]</code>.</li>
-                <li><strong>Object:</strong> Represents a collection of key-value pairs, e.g., <code>{ name: "John", age: 30 }</code>.</li>
-            </ul>
-        
-            <h4>Operators</h4>
-            <p>Operators are used to perform operations on variables and values. JavaScript supports various types of operators:</p>
-            <ul>
-                <li><strong>Arithmetic Operators:</strong> Used to perform mathematical calculations, e.g., <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>.</li>
-                <li><strong>Assignment Operators:</strong> Used to assign values to variables, e.g., <code>=</code>, <code>+=</code>, <code>*=</code>.</li>
-                <li><strong>Comparison Operators:</strong> Used to compare two values, e.g., <code>==</code>, <code>===</code>, <code>!=</code>, <code>&gt;</code>.</li>
-                <li><strong>Logical Operators:</strong> Used to perform logical operations, e.g., <code>&&</code>, <code>||</code>, <code>!</code>.</li>
-            </ul>
-        
-            <h4>Expressions and Statements</h4>
-            <p>In JavaScript, an expression is a piece of code that produces a value, while a statement is an instruction that performs an action. For example:</p>
+
+            <h3>Handling Requests</h3>
+            <p>The callback function in <code>http.createServer()</code> receives two arguments: <code>req</code>
+                (request) and <code>res</code> (response). You can use these to handle incoming requests and send
+                responses. Here’s an example of how to handle different HTTP methods and URLs:</p>
             <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
         <code>
-        /* Expression */
-        let sum = 10 + 20;  // The expression '10 + 20' produces the value 30
+        const http = require('http');
         
-        /* Statement */
-        if (sum > 20) {
-            console.log("Sum is greater than 20"); // This statement performs an action
-        }
-        </code>
-            </pre>
+        const server = http.createServer((req, res) => {
+            // Set the response HTTP header
+            res.writeHead(200, {'Content-Type': 'text/html'});
         
-            <h4>Comments</h4>
-            <p>Comments are used to add notes or explanations within the code. They are ignored by the browser and do not affect the execution of the script.</p>
-            <ul>
-                <li><strong>Single-Line Comment:</strong> Begins with <code>//</code>, e.g., <code>// This is a comment</code>.</li>
-                <li><strong>Multi-Line Comment:</strong> Enclosed in <code>/* ... */</code>, e.g., <code>/* This is a multi-line comment */</code>.</li>
-            </ul>
-        
-            <h4>Code Blocks and Indentation</h4>
-            <p>Code blocks are sections of code enclosed in curly braces <code>{}</code>. Proper indentation is crucial for readability, although it is not enforced by JavaScript itself.</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        /* Code block with proper indentation */
-        function greet(name) {
-            if (name) {
-                console.log("Hello, " + name);
+            // Handle different request methods and URLs
+            if (req.method === 'GET' && req.url === '/') {
+                res.end('<h1>Home Page</h1>');
+            } else if (req.method === 'GET' && req.url === '/about') {
+                res.end('<h1>About Page</h1>');
             } else {
-                console.log("Hello, World!");
+                res.writeHead(404, {'Content-Type': 'text/html'});
+                res.end('<h1>404 Not Found</h1>');
             }
-        }
+        });
+        
+        server.listen(3000, '127.0.0.1', () => {
+            console.log('Server running at http://127.0.0.1:3000/');
+        });
         </code>
             </pre>
+
+            <h3>Handling POST Requests</h3>
+            <p>Handling POST requests involves receiving data sent by the client. Here's an example of how to handle a
+                POST request and process the data:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        const http = require('http');
         
-            <h4>Conclusion</h4>
-            <p>Understanding JavaScript syntax is the first step in mastering the language. By learning the basic building blocks, you can start creating dynamic and interactive web applications.</p>
+        const server = http.createServer((req, res) => {
+            if (req.method === 'POST' && req.url === '/submit') {
+                let body = '';
+        
+                // Collect data chunks
+                req.on('data', chunk => {
+                    body += chunk.toString(); // Convert Buffer to string
+                });
+        
+                // When all data has been received
+                req.on('end', () => {
+                    console.log('Received POST data:', body);
+                    res.writeHead(200, {'Content-Type': 'text/plain'});
+                    res.end('Data received');
+                });
+            } else {
+                res.writeHead(404, {'Content-Type': 'text/html'});
+
+Shrey, [12-08-2024 03:17 PM]
+res.end('<h1>404 Not Found</h1>');
+            }
+        });
+        
+        server.listen(3000, '127.0.0.1', () => {
+            console.log('Server running at http://127.0.0.1:3000/');
+        });
+        </code>
+            </pre>
+
+            <h3>Creating an HTTP Client</h3>
+            <p>Node.js also allows you to make HTTP requests using the <code>http</code> module. Here's how to create an
+                HTTP client to make a GET request:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        const http = require('http');
+        
+        // Make a GET request
+        http.get('http://www.example.com', (resp) => {
+            let data = '';
+        
+            // Collect data chunks
+            resp.on('data', chunk => {
+                data += chunk;
+            });
+        
+            // When all data has been received
+            resp.on('end', () => {
+                console.log('Response:', data);
+            });
+        
+        }).on("error", (err) => {
+            console.log("Error: " + err.message);
+        });
+        </code>
+            </pre>
+
+            <h3>Additional Resources</h3>
+            <p>For more information on the <code>http</code> module, refer to the official Node.js documentation:</p>
+            <ul>
+                <li><a href="https://nodejs.org/api/http.html">Node.js HTTP Documentation</a></li>
+            </ul>
         </section>
-        
 
 
         <section id="topic4">
-            <h2>JavaScript Variables</h2>
-            <p>Variables are fundamental building blocks in JavaScript, allowing developers to store, update, and manipulate data throughout their code. Understanding how to use variables effectively is key to writing efficient and readable programs.</p>
-        
-            <h3>Declaring Variables</h3>
-            <p>In JavaScript, variables can be declared using three keywords: <code>var</code>, <code>let</code>, and <code>const</code>. Each has its own scope and use case:</p>
-            <ul>
-                <li><strong>var:</strong> The traditional way to declare a variable. It is function-scoped and can be re-assigned.</li>
-                <li><strong>let:</strong> Introduced in ES6 (ECMAScript 2015), <code>let</code> is block-scoped and allows re-assignment.</li>
-                <li><strong>const:</strong> Also introduced in ES6, <code>const</code> is block-scoped but cannot be re-assigned once a value is set.</li>
-            </ul>
+            <h2>Node.js File System</h2>
+            <p>The <code>fs</code> module in Node.js provides an API for interacting with the file system. It allows you
+                to perform operations such as reading, writing, and deleting files and directories. The module supports
+                both synchronous and asynchronous methods.</p>
+
+            <h3>Reading Files</h3>
+            <p>You can read files using either the asynchronous or synchronous methods provided by the <code>fs</code>
+                module. Here's how to read a file asynchronously:</p>
             <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
         <code>
-        /* Variable declarations */
-        var x = 5;        // Function-scoped variable
-        let y = 10;       // Block-scoped variable
-        const z = 15;     // Block-scoped constant, cannot be re-assigned
+        // Import the 'fs' module
+        const fs = require('fs');
+        
+        // Read a file asynchronously
+        fs.readFile('example.txt', 'utf8', (err, data) => {
+            if (err) throw err;
+            console.log('File content:', data);
+        });
         </code>
             </pre>
-        
-            <h4>Variable Scope</h4>
-            <p>The scope of a variable determines where it can be accessed in the code. JavaScript has three types of scopes:</p>
-            <ul>
-                <li><strong>Global Scope:</strong> Variables declared outside any function or block are globally scoped and can be accessed anywhere in the code.</li>
-                <li><strong>Function Scope:</strong> Variables declared with <code>var</code> inside a function are scoped to that function and cannot be accessed outside of it.</li>
-                <li><strong>Block Scope:</strong> Variables declared with <code>let</code> or <code>const</code> inside a block (e.g., within <code>{}</code>) are limited to that block.</li>
-            </ul>
+
+            <p>To read a file synchronously, you can use:</p>
             <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
         <code>
-        /* Scope examples */
-        var globalVar = "I am global"; // Global scope
-        
-        function myFunction() {
-            var functionVar = "I am in a function"; // Function scope
-            console.log(functionVar); // Accessible within the function
-        }
-        
-        if (true) {
-            let blockVar = "I am in a block"; // Block scope
-            console.log(blockVar); // Accessible within the block
-        }
+        // Read a file synchronously
+        const data = fs.readFileSync('example.txt', 'utf8');
+        console.log('File content:', data);
         </code>
             </pre>
-        
-            <h4>Variable Hoisting</h4>
-            <p>JavaScript has a behavior called "hoisting," where variable declarations are moved to the top of their scope before code execution. This applies to both <code>var</code> and function declarations but not to <code>let</code> or <code>const</code>.</p>
-            <p>However, the values are not hoisted, which can lead to unexpected results:</p>
+
+            <h3>Writing Files</h3>
+            <p>Writing data to a file can also be done asynchronously or synchronously. Here’s how to write to a file
+                asynchronously:</p>
             <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
         <code>
-        console.log(hoistedVar); // Undefined, because only the declaration is hoisted
-        var hoistedVar = "I am hoisted";
-        
-        console.log(notHoistedVar); // ReferenceError: Cannot access 'notHoistedVar' before initialization
-        let notHoistedVar = "I am not hoisted";
+        // Write data to a file asynchronously
+        fs.writeFile('output.txt', 'Hello, Node.js!', (err) => {
+            if (err) throw err;
+            console.log('Data written to file');
+        });
         </code>
             </pre>
-        
-            <h4>Best Practices</h4>
-            <p>When working with variables in JavaScript, it's important to follow best practices to avoid common pitfalls:</p>
+
+            <p>To write data synchronously, you can use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Write data to a file synchronously
+        fs.writeFileSync('output.txt', 'Hello, Node.js!');
+        console.log('Data written to file');
+        </code>
+            </pre>
+
+            <h3>Appending to Files</h3>
+            <p>Appending data to a file adds content to the end of the file. Here’s how to append data asynchronously:
+            </p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Append data to a file asynchronously
+
+Shrey, [12-08-2024 03:17 PM]
+fs.appendFile('output.txt', ' More content.', (err) => {
+            if (err) throw err;
+            console.log('Data appended to file');
+        });
+        </code>
+            </pre>
+
+            <h3>Deleting Files</h3>
+            <p>You can delete files using the <code>fs.unlink</code> method. Here’s how to delete a file asynchronously:
+            </p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Delete a file asynchronously
+        fs.unlink('output.txt', (err) => {
+            if (err) throw err;
+            console.log('File deleted');
+        });
+        </code>
+            </pre>
+
+            <h3>Working with Directories</h3>
+            <p>Node.js provides methods to work with directories, such as creating, reading, and deleting directories.
+            </p>
+
+            <h4>Creating a Directory</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Create a directory asynchronously
+        fs.mkdir('new-directory', (err) => {
+            if (err) throw err;
+            console.log('Directory created');
+        });
+        </code>
+            </pre>
+
+            <h4>Reading a Directory</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Read a directory asynchronously
+        fs.readdir('.', (err, files) => {
+            if (err) throw err;
+            console.log('Files in directory:', files);
+        });
+        </code>
+            </pre>
+
+            <h4>Deleting a Directory</h4>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Delete a directory asynchronously
+        fs.rmdir('new-directory', (err) => {
+            if (err) throw err;
+            console.log('Directory deleted');
+        });
+        </code>
+            </pre>
+
+            <h3>Additional Resources</h3>
+            <p>For more details and advanced file system operations, refer to the official Node.js documentation:</p>
             <ul>
-                <li>Use <code>let</code> and <code>const</code> instead of <code>var</code> to prevent issues related to function scope and hoisting.</li>
-                <li>Always declare variables at the beginning of their scope to enhance code readability and maintainability.</li>
-                <li>Use <code>const</code> for variables that should not be re-assigned to prevent accidental changes.</li>
-                <li>Choose meaningful and descriptive names for variables to make your code more understandable.</li>
+                <li><a href="https://nodejs.org/api/fs.html">Node.js File System Documentation</a></li>
             </ul>
-        
-            <h4>Conclusion</h4>
-            <p>Understanding how to declare and use variables in JavaScript is essential for any developer. By following best practices and being aware of JavaScript's unique behaviors like hoisting, you can write cleaner, more reliable code.</p>
         </section>
-        
 
-
-        <section id="topic4">
-            <h2>JavaScript Variables</h2>
-            <p>Variables are containers for storing data values. In JavaScript, variables are used to store data that can be used and manipulated throughout your program.</p>
-        
-            <h3>Declaring Variables</h3>
-            <p>JavaScript variables can be declared in four ways:</p>
-            <ul>
-                <li><strong>Automatically:</strong> A variable can be declared automatically the first time it is assigned a value without using any keyword. However, this is not recommended as it can lead to unexpected behavior.</li>
-                <li><strong>Using <code>var</code>:</strong> This is the old way of declaring variables. Variables declared with <code>var</code> have function scope or global scope.</li>
-                <li><strong>Using <code>let</code>:</strong> This is the modern way of declaring variables. Variables declared with <code>let</code> have block scope and cannot be redeclared within the same scope.</li>
-                <li><strong>Using <code>const</code>:</strong> Variables declared with <code>const</code> are also block-scoped but are read-only. Once a <code>const</code> variable is assigned a value, it cannot be reassigned.</li>
-            </ul>
-        
-            <h4>Example: Variable Declaration</h4>
-            <p>Here's an example of declaring variables in different ways:</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        // Automatically declared variable (not recommended)
-        myVar = "Hello";
-        
-        // Declaring a variable with var
-        var name = "John";
-        
-        // Declaring a variable with let
-        let age = 30;
-        
-        // Declaring a constant variable with const
-        const birthYear = 1990;
-        </code>
-            </pre>
-        </section>
-
-        
+        Shrey, [12-08-2024 03:17 PM]
         <section id="topic5">
-            <h2>JavaScript Operators</h2>
-            <p>Operators are used to perform operations on variables and values. JavaScript includes several types of operators that allow you to manipulate data in various ways.</p>
-        
-            <h3>Arithmetic Operators</h3>
-            <p>Arithmetic operators are used to perform basic mathematical operations, such as addition, subtraction, multiplication, and division:</p>
-            <ul>
-                <li><strong>Addition (+):</strong> Adds two numbers together, e.g., <code>5 + 2</code> results in <code>7</code>.</li>
-                <li><strong>Subtraction (-):</strong> Subtracts one number from another, e.g., <code>5 - 2</code> results in <code>3</code>.</li>
-                <li><strong>Multiplication (*):</strong> Multiplies two numbers, e.g., <code>5 * 2</code> results in <code>10</code>.</li>
-                <li><strong>Division (/):</strong> Divides one number by another, e.g., <code>5 / 2</code> results in <code>2.5</code>.</li>
-                <li><strong>Modulus (%):</strong> Returns the remainder of a division, e.g., <code>5 % 2</code> results in <code>1</code>.</li>
-                <li><strong>Increment (++):</strong> Increases a number by 1, e.g., <code>let x = 5; x++;</code> results in <code>6</code>.</li>
-                <li><strong>Decrement (--):</strong> Decreases a number by 1, e.g., <code>let x = 5; x--;</code> results in <code>4</code>.</li>
-            </ul>
-        
-            <h4>Example: Arithmetic Operators</h4>
-            <p>Here are some examples of arithmetic operators in action:</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        let a = 10;
-        let b = 3;
-        
-        let sum = a + b;   // 13
-        let difference = a - b;   // 7
-        let product = a * b;   // 30
-        let quotient = a / b;   // 3.33
-        let remainder = a % b;   // 1
-        a++;   // a becomes 11
-        b--;   // b becomes 2
-        </code>
-            </pre>
-        </section>
-        
+            <h2>Node.js Events</h2>
+            <p>Node.js uses an event-driven architecture that allows it to handle asynchronous operations efficiently.
+                The <code>events</code> module provides a way to work with events and listeners. At the heart of this
+                module is the <code>EventEmitter</code> class, which enables objects to emit and listen for events.</p>
 
+            <h3>EventEmitter Class</h3>
+            <p>The <code>EventEmitter</code> class is used to handle events and listeners. You can create an instance of
+                this class, define your own events, and attach listeners to handle those events.</p>
 
-        <section id="topic6">
-            <h2>JavaScript Functions</h2>
-            <p>Functions are one of the fundamental building blocks in JavaScript. A function is a block of code designed to perform a particular task, and it can be reused throughout your program.</p>
-        
-            <h3>Defining a Function</h3>
-            <p>A JavaScript function is defined with the <code>function</code> keyword, followed by a name, followed by parentheses <code>()</code>. A function can be declared as follows:</p>
+            <h4>Creating an EventEmitter</h4>
             <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
         <code>
-        function functionName() {
-            // Code to be executed
-        }
+        // Import the 'events' module
+        const EventEmitter = require('events');
+        
+        // Create an instance of EventEmitter
+        const myEmitter = new EventEmitter();
+        
+        // Define an event listener
+        myEmitter.on('event', () => {
+            console.log('An event occurred!');
+        });
+        
+        // Emit the event
+        myEmitter.emit('event');
         </code>
             </pre>
-        
-            <h4>Example: Simple Function</h4>
-            <p>Here’s an example of a simple function that logs a message to the console:</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        function greet() {
-            console.log("Hello, World!");
-        }
-        
-        greet(); // Calls the function, output: "Hello, World!"
-        </code>
-            </pre>
-        
-            <h3>Function Parameters</h3>
-            <p>Functions can take input values, called parameters, which allow you to pass data into the function. These parameters are specified inside the parentheses:</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        function greetUser(name) {
-            console.log("Hello, " + name + "!");
-        }
-        
-        greetUser("Alice"); // Output: "Hello, Alice!"
-        </code>
-            </pre>
-        
-            <h3>Function Return Value</h3>
-            <p>A JavaScript function can also return a value back to the caller using the <code>return</code> statement:</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        function add(a, b) {
-            return a + b;
-        }
-        
-        let sum = add(5, 3); // sum is now 8
-        </code>
-            </pre>
-        
-            <h3>Function Expressions</h3>
-            <p>In JavaScript, functions can also be defined as expressions. A function expression can be stored in a variable:</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        let add = function(a, b) {
-            return a + b;
-        };
-        
-        let sum = add(5, 3); // sum is now 8
-        </code>
-            </pre>
-        
-            <h3>Arrow Functions</h3>
-            <p>ES6 introduced arrow functions, a more concise syntax for writing function expressions:</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        let add = (a, b) => a + b;
-        
-        let sum = add(5, 3); // sum is now 8
-        </code>
-            </pre>
-        </section>
-        
 
-
-        <section id="topic7">
-            <h2>JavaScript Events</h2>
-            <p>JavaScript events are actions or occurrences that happen in the browser. These events can be triggered by the user or by the browser itself, and JavaScript can be used to respond to these events. Common events include user interactions like clicking a button, hovering over an element, or pressing a key.</p>
-        
-            <h3>Common HTML Events</h3>
-            <p>Here are some common HTML events that are often used in JavaScript:</p>
-            <ul>
-                <li><strong><code>onchange</code>:</strong> Triggered when the value of an element has been changed.</li>
-                <li><strong><code>onclick</code>:</strong> Triggered when the user clicks on an element.</li>
-                <li><strong><code>onmouseover</code>:</strong> Triggered when the user moves the mouse pointer over an element.</li>
-                <li><strong><code>onmouseout</code>:</strong> Triggered when the user moves the mouse pointer away from an element.</li>
-                <li><strong><code>onkeydown</code>:</strong> Triggered when the user presses a keyboard key.</li>
-                <li><strong><code>onload</code>:</strong> Triggered when the browser has finished loading the page.</li>
-            </ul>
-        
             <h3>Event Handling</h3>
-            <p>To handle events, you can use event listeners or inline event attributes. Here's an example of handling a click event using both methods:</p>
-            
-            <h4>Example: Handling a Click Event</h4>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        // Event handling using an event listener
-        document.getElementById("myButton").addEventListener("click", function() {
-            alert("Button clicked!");
-        });
-        
-        // Event handling using an inline event attribute
-        // <button onclick="alert('Button clicked!')">Click Me</button>
-        </code>
-            </pre>
-        
-            <h3>Mouse Events</h3>
-            <p>Mouse events are triggered by user interactions with the mouse. Here are some common mouse events:</p>
-            <ul>
-                <li><strong><code>onclick</code>:</strong> Triggered when the user clicks on an element.</li>
-                <li><strong><code>onmouseover</code>:</strong> Triggered when the user moves the mouse pointer over an element.</li>
-                <li><strong><code>onmouseout</code>:</strong> Triggered when the user moves the mouse pointer away from an element.</li>
-            </ul>
-        
-            <h4>Example: Mouseover and Mouseout Events</h4>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        document.getElementById("myDiv").addEventListener("mouseover", function() {
-            this.style.backgroundColor = "yellow";
-        });
-        
-        document.getElementById("myDiv").addEventListener("mouseout", function() {
-            this.style.backgroundColor = "white";
-        });
-        </code>
-            </pre>
-        
-            <h3>Keyboard Events</h3>
-            <p>Keyboard events are triggered when the user presses a key on the keyboard. Common keyboard events include:</p>
-            <ul>
-                <li><strong><code>onkeydown</code>:</strong> Triggered when a key is pressed down.</li>
-                <li><strong><code>onkeyup</code>:</strong> Triggered when a key is released.</li>
-            </ul>
-        
-            <h4>Example: Handling Keydown Event</h4>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        document.addEventListener("keydown", function(event) {
-            alert("Key pressed: " + event.key);
-        });
-        </code>
-            </pre>
-        
-            <h3>Page Load Event</h3>
-            <p>The <code>onload</code> event is triggered when the browser has finished loading the page. This event is often used to execute scripts as soon as the page has loaded:</p>
-            
-            <h4>Example: Page Load Event</h4>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        window.onload = function() {
-            alert("Page has fully loaded.");
-        };
-        </code>
-            </pre>
-        </section>
-        
+            <p>Event handling in Node.js involves defining events and attaching multiple listeners to them. You can also
+                remove listeners and handle errors related to event emissions.</p>
 
-        
-        <section id="topic8">
-            <h2>JavaScript Objects</h2>
-            <p>In JavaScript, objects are a collection of properties, where each property consists of a key-value pair. Objects are used to store multiple values as a single entity, and they are one of the most important data types in JavaScript.</p>
-        
-            <h3>Creating a JavaScript Object</h3>
-            <p>An object can be created using either the object literal syntax or the <code>new Object()</code> constructor. Here's an example of creating an object using the object literal syntax:</p>
+            <h4>Defining and Emitting Events</h4>
             <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
         <code>
-        // Creating an object using object literal syntax
-        let person = {
-            firstName: "John",
-            lastName: "Doe",
-            age: 30,
-            job: "Developer"
+        // Create an EventEmitter instance
+        const myEmitter = new EventEmitter();
+        
+        // Define an event listener with parameters
+        myEmitter.on('greet', (name) => {
+            console.log(Hello, ${name}!);
+        });
+        
+        // Emit the event with parameters
+        myEmitter.emit('greet', 'Alice');
+        </code>
+            </pre>
+
+            <h4>Handling Multiple Listeners</h4>
+            <p>You can attach multiple listeners to a single event:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Create an EventEmitter instance
+        const myEmitter = new EventEmitter();
+        
+        // Define multiple listeners for the same event
+        myEmitter.on('data', (data) => {
+            console.log('Listener 1 received data:', data);
+        });
+        myEmitter.on('data', (data) => {
+            console.log('Listener 2 received data:', data);
+        });
+        
+        // Emit the event
+        myEmitter.emit('data', 'Sample data');
+        </code>
+            </pre>
+
+            <h4>Removing Listeners</h4>
+            <p>You can remove specific listeners from an event:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        // Create an EventEmitter instance
+        const myEmitter = new EventEmitter();
+        
+        // Define an event listener
+        const callback = () => {
+            console.log('This will not be logged');
         };
+        myEmitter.on('event', callback);
+        
+        // Remove the event listener
+        myEmitter.removeListener('event', callback);
+        
+        // Emit the event
+        myEmitter.emit('event');
         </code>
             </pre>
-        
-            <h3>Accessing Object Properties</h3>
-            <p>You can access the properties of an object using dot notation or bracket notation:</p>
+
+            <h4>Handling Errors</h4>
+            <p>When dealing with events, you should handle errors to prevent the application from crashing:</p>
             <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
         <code>
-        // Accessing object properties using dot notation
-        let name = person.firstName; // "John"
+        // Create an EventEmitter instance
+        const myEmitter = new EventEmitter();
         
-        // Accessing object properties using bracket notation
-        let age = person["age"]; // 30
+        // Handle 'error' event
+        myEmitter.on('error', (err) => {
+            console.error('An error occurred:', err);
+        });
+        
+        // Emit 'error' event
+
+Shrey, [12-08-2024 03:17 PM]
+myEmitter.emit('error', new Error('Something went wrong'));
         </code>
             </pre>
-        
-            <h3>Adding and Modifying Properties</h3>
-            <p>Properties can be added or modified by simply assigning a value to the property using dot or bracket notation:</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        // Adding a new property
-        person.email = "john.doe@example.com";
-        
-        // Modifying an existing property
-        person.age = 31;
-        </code>
-            </pre>
-        
-            <h3>Deleting Properties</h3>
-            <p>Properties can be removed from an object using the <code>delete</code> operator:</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        // Deleting a property
-        delete person.job;
-        </code>
-            </pre>
-        
-            <h3>Object Methods</h3>
-            <p>In JavaScript, methods are functions that are stored as object properties. Here's how you can add a method to an object:</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        // Adding a method to an object
-        person.fullName = function() {
-            return this.firstName + " " + this.lastName;
-        };
-        
-        // Calling the method
-        let fullName = person.fullName(); // "John Doe"
-        </code>
-            </pre>
-        
-            <h3>Object Constructors</h3>
-            <p>You can create multiple objects with the same properties using a constructor function. A constructor function is a template for creating objects:</p>
-            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
-        <code>
-        // Object constructor function
-        function Person(firstName, lastName, age, job) {
-            this.firstName = firstName;
-            this.lastName = lastName;
-            this.age = age;
-            this.job = job;
-        }
-        
-        // Creating objects using the constructor
-        let person1 = new Person("John", "Doe", 30, "Developer");
-        let person2 = new Person("Jane", "Doe", 28, "Designer");
-        </code>
-            </pre>
+
+            <h3>Additional Resources</h3>
+            <p>For more details on the <code>EventEmitter</code> class and event handling, refer to the official Node.js
+                documentation:</p>
+            <ul>
+                <li><a href="https://nodejs.org/api/events.html">Node.js Events Documentation</a></li>
+            </ul>
         </section>
-        
+
+
+        <section id="nodejs-npm">
+            <h2>Node.js NPM</h2>
+            <p>NPM (Node Package Manager) is the default package manager for Node.js. It allows you to install, manage,
+                and share packages (libraries and tools) that you can use in your Node.js projects. NPM provides a vast
+                ecosystem of packages that simplify development and extend functionality.</p>
+
+            <h3>Installing NPM</h3>
+            <p>NPM is installed automatically when you install Node.js. You can verify the installation and check the
+                version of NPM using the following command:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm -v
+        </code>
+            </pre>
+
+            <h3>Basic NPM Commands</h3>
+            <p>Here are some essential NPM commands to help you get started:</p>
+
+            <h4>1. Initializing a New Project</h4>
+            <p>To create a new Node.js project, initialize a new <code>package.json</code> file using:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm init
+        </code>
+            </pre>
+            <p>This command will prompt you to enter details about your project. You can also use
+                <code>npm init -y</code> to create a default <code>package.json</code> file without prompts.
+            </p>
+
+            <h4>2. Installing Packages</h4>
+            <p>To install a package and save it as a dependency in your project, use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm install <package-name>
+        </code>
+            </pre>
+            <p>To install a package globally (for use across projects), add the <code>-g</code> flag:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm install -g <package-name>
+        </code>
+            </pre>
+
+            <h4>3. Uninstalling Packages</h4>
+            <p>To remove a package from your project, use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm uninstall <package-name>
+        </code>
+            </pre>
+
+            <h4>4. Updating Packages</h4>
+            <p>To update all the packages in your project to their latest versions, use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm update
+        </code>
+            </pre>
+
+            <h4>5. Listing Installed Packages</h4>
+            <p>To list all installed packages in your project, use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm list
+        </code>
+            </pre>
+            <p>For globally installed packages, use:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm list -g
+        </code>
+            </pre>
+
+            <h3>Using package.json</h3>
+            <p>The <code>package.json</code> file is essential for managing project dependencies and scripts. Here’s an
+                example of a <code>package.json</code> file:</p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        {
+          "name": "my-project",
+          "version": "1.0.0",
+
+Shrey, [12-08-2024 03:17 PM]
+"description": "A sample Node.js project",
+          "main": "index.js",
+          "scripts": {
+            "start": "node index.js"
+          },
+          "dependencies": {
+            "express": "^4.17.1"
+          },
+          "devDependencies": {
+            "nodemon": "^2.0.7"
+          },
+          "author": "Your Name",
+          "license": "ISC"
+        }
+        </code>
+            </pre>
+
+            <h4>Scripts</h4>
+            <p>In the <code>scripts</code> section, you can define custom commands to run scripts. For example, the
+                <code>start</code> script defined above can be run using:
+            </p>
+            <pre style="background-color: rgb(245, 245, 245); padding: 10px; border: 1px solid #ddd;">
+        <code>
+        $ npm start
+        </code>
+            </pre>
+
+            <h3>Additional Resources</h3>
+            <p>For more details and advanced usage of NPM, refer to the official NPM documentation:</p>
+            <ul>
+                <li><a href="https://docs.npmjs.com/">NPM Documentation</a></li>
+            </ul>
+        </section>
 
 
     </main>
